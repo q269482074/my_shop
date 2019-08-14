@@ -1,0 +1,87 @@
+html{
+    height: 100%;
+}
+body{
+    background: url(../images/loginbg.jpg) no-repeat;
+    background-size:100% 100%;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:focus{
+    text-decoration: none;
+}
+
+
+.content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content .header{
+    flex: 0 0 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.content .header .header-left{
+    font-size: 30px;
+    color: #fff;
+    line-height: 70px;
+    float: left;
+}
+.content .header .header-right{
+    font-size: 20px;
+    color: #fff;
+    line-height: 70px;
+    float: right;
+}
+.content .header .header-right .header-right-item{
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.bottom{
+    flex: 1;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bottom .meun{
+    flex: 0 0 170px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.meun-title{
+    height: 30px;
+    width: 100%;
+    background-color: rgba(12, 104, 241, 0.4);
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.meun-item{
+    height: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(72, 59, 247);
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.bottom-right{
+    flex: 1;
+}
+
+.bottom-right iframe{
+    width: 100%;
+    height: 99.5%;
+}
+

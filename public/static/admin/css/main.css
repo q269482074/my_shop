@@ -1,0 +1,27 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.box{
+    width: 310px;
+    height: 250px;
+    float: left;
+    margin: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+.content{
+    padding: 50px;
+    padding-top: 20px;
+    color: #fff;
+}
+

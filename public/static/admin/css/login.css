@@ -1,0 +1,43 @@
+html{
+    height: 100%;
+}
+body{
+    background: url(../images/loginbg.jpg) no-repeat;
+    background-size:100% 100%;
+}
+
+.loginContriner{
+    width: 430px;
+    height: 316px;
+    margin: auto;
+    margin-top: 150px;
+    color: rgb(39, 131, 216);
+    background-color: rgba(126, 122, 122, .4);
+}
+.title{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-lg{
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.637);
+    color: #000;
+}
+
+.btn-info{
+    width: 75px;
+    height: 50px;
+}
+.checkbox{
+    font-size: 20px;
+    
+}
+.checkbox input{
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+}
+.captcha{
+    width: 50%;
+}
