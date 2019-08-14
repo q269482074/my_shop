@@ -1,6 +1,6 @@
 <?php
 namespace app\admin\controller;
-use thunk\Controller;
+use think\Controller;
 
 class Login extends Controller
 {
