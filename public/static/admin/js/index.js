@@ -20,4 +20,9 @@ $(function(){
             $('.meun').fadeToggle();
         }
     });
+
+    //点击菜单iframe跳转
+    $('.meun-item a').click(function(){
+        $('.bottom-right iframe').attr('src',$(this).attr('link'));
+    });
 })

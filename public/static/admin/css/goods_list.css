@@ -1,0 +1,63 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 5px;
+}
+
+.header{
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(97, 97, 245, 0.801);
+}
+
+.search{
+    margin-top: 10px;
+    color: rgb(248, 190, 63);
+    line-height: 40px;
+}
+
+
+select{
+    border-radius: 5px;
+    color: rgb(28, 102, 240);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+input{
+    height: 28px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#onsale{
+    vertical-align: middle;
+}
+
+td{
+    color: rgb(248, 190, 63);
+    text-align: center;
+    margin: auto;
+}
+td img{
+    width: 65;
+    height: 33px;
+}
+
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+
+.content{
+    position: relative;
+}
+.content .add_goods{
+    position: absolute;
+    top: -35px;
+    right: 0;
+}
