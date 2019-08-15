@@ -1,16 +1,17 @@
+<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\add_goods.html";i:1565883248;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="__STATIC__/admin/css/bootstrap.min.css">
-    <link rel="stylesheet" href="__STATIC__/admin/css/bootstrap.min.css">
-    <link rel="stylesheet" href="__STATIC__/admin/layui/css/layui.css">
-    <link rel="stylesheet" href="__STATIC__/admin/css/add_goods.css">
-    <script src="__STATIC__/admin/js/jquery-3.3.1.min.js"></script>
-    <script src="__STATIC__/admin/js/bootstrap.min.js"></script>
-    <script src="__STATIC__/admin/layui/layui.js"></script>
+    <link rel="stylesheet" href="/static/admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/admin/layui/css/layui.css">
+    <link rel="stylesheet" href="/static/admin/css/add_goods.css">
+    <script src="/static/admin/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/admin/js/bootstrap.min.js"></script>
+    <script src="/static/admin/layui/layui.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -95,7 +96,7 @@ layui.use(['layer','upload'],function(){
 $('.submit').click(function(){
     $.ajax({
         type:"post",
-        url:"{:url('admin/goods/addGoods')}",
+        url:"<?php echo url('admin/goods/addGoods'); ?>",
         data:$('form').serialize(),
         dattaType:"json",
         success:function(data){
