@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html";i:1565870781;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html";i:1565874563;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -164,11 +164,12 @@ $('.add_goods').click(function(){
         layer = layui.layer;
         layer.open({
             type: 2,
-            title: 'layer mobile页',
+            title: '添加商品',
             shadeClose: true,
             shade: 0.3,
-            area: ['380px', '90%'],
-            content: '/admin/goods/add_goods' //iframe的url
+            area: ['500px', '500px'],
+            offset: '10px',
+            content: '/admin/goods/addGoods' //iframe的url
         }); 
     }); 
 });

@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\index\index.html";i:1565863429;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\index\index.html";i:1565873617;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +26,10 @@
                     隐藏菜单
                 </div>
                 <div class="header-right-item home">
-                    <i class="glyphicon glyphicon-home"></i>
-                    首页
+                    <a href="<?php echo url('admin/index/index'); ?>">
+                        <i class="glyphicon glyphicon-home"></i>
+                        首页
+                    </a>
                 </div>
                 <div class="header-right-item">
                     退出登录
