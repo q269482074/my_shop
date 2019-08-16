@@ -1,4 +1,4 @@
-<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\add_goods.html";i:1565883248;}*/ ?>
+<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\add_goods.html";i:1565941943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +15,13 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="header">
+        <div class="on">商品信息</div>
+        <div>商品描述</div>
+        <div>商品属性</div>
+    </div>
     <form>
-        <div class="content">
+        <div class="content info">
             <div class="dropdown">
                 商品分类：
                 <select name="type_id" id="type_id">
@@ -61,6 +66,9 @@
             排&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;序：<input type="text" name="sort" id="sort" value="100" size="3">
         </div>
         </div>
+        <div class="content desc" style="display: none;">
+            <textarea name="goods_desc" id="goods_desc"></textarea>
+        </div>
         <div class="btn-sub">
             <button type="button" class="btn btn-info submit">确定</button>
             <button type="reset" class="btn btn-success reset">重置</button>
@@ -68,8 +76,14 @@
     </form>
 </body>
 </html>
-
+<script src="/static/utf8-php/ueditor.config.js"></script>
+<script src="/static/utf8-php/ueditor.all.min.js"></script>
+<script src="/static/utf8-php/lang/zh-cn/zh-cn.js"></script>
 <script>
+//百度编辑器
+var ue = UE.getEditor('goods_desc');
+
+//上传图片
 layui.use(['layer','upload'],function(){
     upload = layui.upload;
     layer = layui.layer;
@@ -90,6 +104,15 @@ layui.use(['layer','upload'],function(){
     });
 });
 
+
+//切换选项卡
+$('.header div').click(function(){
+    var i = $(this).index();
+    $('.header div').removeClass('on');
+    $('.content').hide();
+    $(this).addClass('on');
+    $('.content').eq(i).show();
+});
 
 
 //添加商品
