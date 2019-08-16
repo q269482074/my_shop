@@ -22,6 +22,14 @@ class Goods extends Model
             return '添加失败';
         }
     }
+
+
+    //搜索商品
+    public function search($page_limit)
+    {
+        $ret = db('goods')->order('id desc')->paginate($page_limit);
+        return $ret;
+    }
 }
 
 

@@ -6,6 +6,17 @@ class Goods extends Controller
 {
     public function goodsList()
     {
+        $page_limit = 5;
+        $goods = model('goods')->search($page_limit);
+		$page = $goods->currentPage(); //初始页
+		$count = $goods->total();//总记录数
+
+        $this->assign([
+            'goods' => $goods,
+            'page_limit' => $page_limit,
+            'page' => $page,
+            'count' => $count,
+        ]);
         return $this->fetch();
     }
 
@@ -21,6 +32,7 @@ class Goods extends Controller
                 'price' => input('post.price'),
                 'goods_price' => input('post.goods_price'),
                 'sort' => input('post.sort'),
+                'desc' => input('post.goods_desc'),
                 'is_sale' => input('post.is_sale') ? input('post.is_sale') : '0',
             ];
             $ret = model('goods')->add($data);
