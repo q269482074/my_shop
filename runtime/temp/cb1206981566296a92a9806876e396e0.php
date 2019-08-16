@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html";i:1565948447;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html";i:1565950002;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="/static/admin/css/goods_list.css">
     <link rel="stylesheet" href="/static/admin/layui/css/layui.css">
     <script src="/static/admin/js/jquery-3.3.1.min.js"></script>
-    <script src="/static/admin/js/bootstrap.min.js"></script>
     <script src="/static/admin/layui/layui.js"></script>
+    <script src="/static/admin/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
 <body>

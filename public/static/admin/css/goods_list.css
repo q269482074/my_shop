@@ -1,9 +1,14 @@
 html{
     height: 100%;
 }
-body{
+html,body{
     background-color: rgba(0, 0, 0, 0.1);
     margin: 0 5px;
+}
+
+td a{
+    color: #4E4EE4;
+    text-decoration: none;
 }
 
 .header{
