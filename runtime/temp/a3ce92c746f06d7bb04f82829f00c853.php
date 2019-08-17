@@ -1,4 +1,4 @@
-<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\brand\add_brand.html";i:1566032302;}*/ ?>
+<?php /*a:1:{s:81:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\category\edit_cat.html";i:1566040631;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,17 +16,20 @@
 </head>
 <body>
     <form>
+        <input type="hidden" name="id" value="<?php echo htmlentities($info['id']); ?>">
         <div class="content info">
         <div>
-            品牌名称：<input type="text" name="brand_name" id="brand_name">
+            上级分类：
+            <select name="category" id="category">
+                <option value="0">请选择</option>
+                <?php if(is_array($cat) || $cat instanceof \think\Collection || $cat instanceof \think\Paginator): $i = 0; $__LIST__ = $cat;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo htmlentities($v['id']); ?>"><?php echo htmlentities($v['cat_name']); ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+            </select>
         </div>
-        <div style="margin: 20px 0;">
-            图片上传：
-            <button type="button" class="layui-btn" id="test1">
-                    <i class="layui-icon">&#xe67c;</i>上传图片
-            </button>
-            <img src="" class="img_show" id="img_show"alt="" style="width: 60px; display: none;">
-            <input type="hidden" name="brand_log" />
+        <div>
+            分类名称：
+            <input type="text" name="cat_name" id="cat_name" value="<?php echo htmlentities($info['cat_name']); ?>">
         </div>
         <div class="btn-sub">
             <button type="button" class="btn btn-info submit">确定</button>
@@ -37,33 +40,12 @@
 </html>
 
 <script>
-//上传图片
-layui.use(['layer','upload'],function(){
-    upload = layui.upload;
-    layer = layui.layer;
-    //执行实例
-    var uploadInst = upload.render({
-    elem: '#test1' //绑定元素
-    ,url: '/admin/goods/upload_img' //上传接口
-    ,size:'2048'
-    ,done: function(res){
-        //上传完毕回调
-        $('#img_show').attr('src',res.msg);
-        $('#img_show').css('display','');
-        $('input[name=brand_log]').val(res.msg);
-    }
-    ,error: function(){
-        //请求异常回调
-    }
-    });
-});
 
-
-//添加商品
+//添加
 $('.submit').click(function(){
     $.ajax({
         type:"post",
-        url:"<?php echo url('admin/brand/addBrand'); ?>",
+        url:"<?php echo url('admin/category/editCat'); ?>",
         data:$('form').serialize(),
         dattaType:"json",
         success:function(data){
