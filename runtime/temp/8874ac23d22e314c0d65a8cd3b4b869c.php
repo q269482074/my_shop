@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\index\index.html";i:1565949309;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\index\index.html";i:1566035212;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,13 +48,13 @@
                             <a href="javascript:;" link="<?php echo url('admin/goods/goodsList','',false); ?>">商品列表</a>
                         </div>
                         <div class="meun-item">
-                            <a href="javascript:;">分类列表</a>
+                            <a href="javascript:;" link="<?php echo url('admin/brand/brandList','',false); ?>">品牌列表</a>
+                        </div>
+                        <div class="meun-item">
+                            <a href="javascript:;" link="<?php echo url('admin/category/catList','',false); ?>">分类列表</a>
                         </div>
                         <div class="meun-item">
                             <a href="javascript:;">类型列表</a>
-                        </div>
-                        <div class="meun-item">
-                            <a href="javascript:;" link="<?php echo url('admin/brand/brandList','',false); ?>">品牌列表</a>
                         </div>
                     </div>
                 </div>

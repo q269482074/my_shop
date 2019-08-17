@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\brand\brand_list.html";i:1566035446;}*/ ?>
+<?php /*a:1:{s:81:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\category\cat_list.html";i:1566040105;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,42 +15,20 @@
 </head>
 <body>
     <header class="header">
-        <span>管理中心-品牌列表</span>
+        <span>管理中心-分类列表</span>
     </header>
-    <div class="search">
-        <form>
-            <div class="dropdown">
-                品&nbsp;&nbsp;&nbsp;牌：
-               <select name="type" id="type">
-                   <option value="">请选择</option>
-                   <option value="">华为</option>
-                   <option value="">苹果</option>
-                   <option value="">小米</option>
-               </select>
-            </div>
-            <div>
-                品牌名称： <input type="text" name="goods_name">
-            </div>
-        </form>
-    </div>
     <div class="content">
-        <button type="button" class="btn btn-info add_goods">添加品牌</button>
+        <button type="button" class="btn btn-info add_goods">添加分类</button>
         <table class="table table-bordered">
             <tr>
-                <td>编号</td>
-                <td>品牌名称</td>
-                <td>品牌图片</td>
+                <td>分类名称</td>
                 <td>操作</td>
             </tr>
             <?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
             <tr>
-                <td><?php echo htmlentities($v['id']); ?></td>
-                <td><?php echo htmlentities($v['brand_name']); ?></td>
+                <td style="text-align: left;"><?php echo htmlentities($v['cat_name']); ?></td>
                 <td>
-                    <img src="<?php echo htmlentities($v['brand_log']); ?>" alt="">
-                </td>
-                <td>
-                    <a href="javascript:;" class="edit" link="<?php echo url('admin/brand/editBrand','',false); ?>/id/<?php echo htmlentities($v['id']); ?>">修改</a>
+                    <a href="javascript:;" class="edit" link="<?php echo url('admin/category/editCat','',false); ?>/id/<?php echo htmlentities($v['id']); ?>">修改</a>
                     <a href="javascript:;">删除</a>
                 </td>
             </tr>
@@ -68,12 +46,12 @@ $('.add_goods').click(function(){
         layer = layui.layer;
         layer.open({
             type: 2,
-            title: '添加品牌',
+            title: '添加分类',
             shadeClose: true,
             shade: 0.3,
             area: ['500px', '500px'],
             offset: '10px',
-            content: '/admin/brand/addBrand' //iframe的url
+            content: '/admin/category/addCat' //iframe的url
         }); 
     }); 
 });
@@ -85,7 +63,7 @@ $('.edit').click(function(){
         layer = layui.layer;
         layer.open({
             type: 2,
-            title: '修改品牌',
+            title: '修改分类',
             shadeClose: true,
             shade: 0.3,
             area: ['500px', '500px'],
