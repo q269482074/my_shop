@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\brand\brand_list.html";i:1565953035;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\brand\brand_list.html";i:1566032734;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +50,7 @@
                     <img src="<?php echo htmlentities($v['brand_log']); ?>" alt="">
                 </td>
                 <td>
-                    <a href="javascript:;">修改</a>
+                    <a href="javascript:;" class="edit" link="<?php echo url('admin/brand/editBrand','',false); ?>/id/<?php echo htmlentities($v['id']); ?>">修改</a>
                     <a href="javascript:;">删除</a>
                 </td>
             </tr>
@@ -74,6 +74,23 @@ $('.add_goods').click(function(){
             area: ['500px', '500px'],
             offset: '10px',
             content: '/admin/brand/addBrand' //iframe的url
+        }); 
+    }); 
+});
+
+//修改
+$('.edit').click(function(){
+    var url = $(this).attr('link');
+    layui.use(['layer'],function(){
+        layer = layui.layer;
+        layer.open({
+            type: 2,
+            title: '修改商品',
+            shadeClose: true,
+            shade: 0.3,
+            area: ['500px', '500px'],
+            offset: '10px',
+            content: url //iframe的url
         }); 
     }); 
 });
