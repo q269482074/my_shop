@@ -1,4 +1,4 @@
-<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\add_goods.html";i:1565968010;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\edit_goods.html";i:1565969178;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +21,7 @@
         <div>商品属性</div>
     </div>
     <form>
+        <input type="hidden" name="id" value="<?php echo htmlentities($info['id']); ?>">
         <div class="content info">
             <div class="dropdown">
                 商品分类：
@@ -41,33 +42,33 @@
                 </select>
             </div>
             <div>
-                商品名称：<input type="text" name="name" id="name">
+                商品名称：<input type="text" name="name" id="name" value="<?php echo htmlentities($info['name']); ?>">
             </div>
         <div style="margin: 20px 0;">
             图片上传：
             <button type="button" class="layui-btn" id="test1">
                     <i class="layui-icon">&#xe67c;</i>上传图片
             </button>
-            <img src="" class="img_show" id="img_show"alt="" style="width: 60px; display: none;">
-            <input type="hidden" name="goods_log" />
+            <img src="<?php echo htmlentities($info['img_url']); ?>" class="img_show" id="img_show"alt="" style="width: 60px;">
+            <input type="hidden" name="goods_log" value="<?php echo htmlentities($info['img_url']); ?>" />
         </div>
         <div style="margin-top: 10px;">
-            原&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价：<input type="text" name="price" id="price">
+            原&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价：<input type="text" name="price" id="price" value="<?php echo htmlentities($info['price']); ?>">
         </div>
         <div style="margin: 10px 0;">
-            本店售价：<input type="text" name="goods_price" id="goods_price">
+            本店售价：<input type="text" name="goods_price" id="goods_price" value="<?php echo htmlentities($info['goods_price']); ?>">
         </div>
         <div>
             是否上架：
-            <input type="radio" name="is_sale" id="is_sale" value="0" checked>是
-            <input type="radio" name="is_sale" id="is_sale" value="1">否
+            <input type="radio" name="is_sale" id="is_sale" value="0" <?php echo $info['is_sale']==0 ? 'checked'  :  ''; ?>>是
+            <input type="radio" name="is_sale" id="is_sale" value="1" <?php echo $info['is_sale']==1 ? 'checked'  :  ''; ?>>否
         </div>
         <div>
-            排&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;序：<input type="text" name="sort" id="sort" value="100" size="3">
+            排&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;序：<input type="text" name="sort" id="sort" value="<?php echo htmlentities($info['sort']); ?>" size="3">
         </div>
         </div>
         <div class="content desc" style="display: none;">
-            <textarea name="goods_desc" id="goods_desc"></textarea>
+            <textarea name="goods_desc" id="goods_desc"><?php echo htmlentities($info['desc']); ?></textarea>
         </div>
         <div class="btn-sub">
             <button type="button" class="btn btn-info submit">确定</button>
@@ -115,11 +116,56 @@ $('.header div').click(function(){
 });
 
 
-//添加商品
+//修改商品
 $('.submit').click(function(){
+    if($('input[name=name]').val().length === 0){
+        layer.open({
+            title: '系统消息'
+            ,content: '商品名称不能为空',
+            icon:5,
+            anime:6
+        });     
+        return false;
+    }
+    if($('input[name=goods_log]').val().length === 0){
+        layer.open({
+            title: '系统消息'
+            ,content: '商品图片不能为空',
+            icon:5,
+            anime:6
+        });     
+        return false;
+    }
+    if($('input[name=price]').val().length === 0){
+        layer.open({
+            title: '系统消息'
+            ,content: '商品价格不能为空',
+            icon:5,
+            anime:6
+        });     
+        return false;
+    }
+    if($('input[name=goods_price]').val().length === 0){
+        layer.open({
+            title: '系统消息'
+            ,content: '本店价格不能为空',
+            icon:5,
+            anime:6
+        });     
+        return false;
+    }
+    if($('input[name=sort]').val().length === 0){
+        layer.open({
+            title: '系统消息'
+            ,content: '排序不能为空',
+            icon:5,
+            anime:6
+        });     
+        return false;
+    }
     $.ajax({
         type:"post",
-        url:"<?php echo url('admin/goods/addGoods'); ?>",
+        url:"<?php echo url('admin/goods/editGoods'); ?>",
         data:$('form').serialize(),
         dattaType:"json",
         success:function(data){
