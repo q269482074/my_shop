@@ -14,42 +14,20 @@
 </head>
 <body>
     <header class="header">
-        <span>管理中心-品牌列表</span>
+        <span>管理中心-分类列表</span>
     </header>
-    <div class="search">
-        <form>
-            <div class="dropdown">
-                品&nbsp;&nbsp;&nbsp;牌：
-               <select name="type" id="type">
-                   <option value="">请选择</option>
-                   <option value="">华为</option>
-                   <option value="">苹果</option>
-                   <option value="">小米</option>
-               </select>
-            </div>
-            <div>
-                品牌名称： <input type="text" name="goods_name">
-            </div>
-        </form>
-    </div>
     <div class="content">
-        <button type="button" class="btn btn-info add_goods">添加品牌</button>
+        <button type="button" class="btn btn-info add_goods">添加分类</button>
         <table class="table table-bordered">
             <tr>
-                <td>编号</td>
-                <td>品牌名称</td>
-                <td>品牌图片</td>
+                <td>分类名称</td>
                 <td>操作</td>
             </tr>
             {volist name="data" id="v"}
             <tr>
-                <td>{$v.id}</td>
-                <td>{$v.brand_name}</td>
+                <td style="text-align: left;">{$v.cat_name}</td>
                 <td>
-                    <img src="{$v.brand_log}" alt="">
-                </td>
-                <td>
-                    <a href="javascript:;" class="edit" link="{:url('admin/brand/editBrand','',false)}/id/{$v.id}">修改</a>
+                    <a href="javascript:;" class="edit" link="{:url('admin/category/editCat','',false)}/id/{$v.id}">修改</a>
                     <a href="javascript:;">删除</a>
                 </td>
             </tr>
@@ -67,12 +45,12 @@ $('.add_goods').click(function(){
         layer = layui.layer;
         layer.open({
             type: 2,
-            title: '添加品牌',
+            title: '添加分类',
             shadeClose: true,
             shade: 0.3,
             area: ['500px', '500px'],
             offset: '10px',
-            content: '/admin/brand/addBrand' //iframe的url
+            content: '/admin/category/addCat' //iframe的url
         }); 
     }); 
 });
@@ -84,7 +62,7 @@ $('.edit').click(function(){
         layer = layui.layer;
         layer.open({
             type: 2,
-            title: '修改品牌',
+            title: '修改分类',
             shadeClose: true,
             shade: 0.3,
             area: ['500px', '500px'],
