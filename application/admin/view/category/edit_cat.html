@@ -19,11 +19,16 @@
         <div class="content info">
         <div>
             上级分类：
-            <select name="category" id="category">
-                <option value="0">请选择</option>
-                {volist name="cat" id="v"}
-                <option value="{$v.id}">{$v.cat_name}</option>
-                {/volist}
+            <select name="parent_id">
+                <option value="0">顶级分类</option>
+                    {volist name="cat" id="v"}
+                    <?php 
+                        if($v['id']==$info['id']): 
+                            continue;
+                    ?>
+                    <?php endif; ?>
+                    <option value="{$v.id}" <?php if($v['id'] == $info['parent_id']) echo 'selected="selected"' ?>>{:str_repeat('-',$v.level*4)}{$v.cat_name}</option>
+                    {/volist}
             </select>
         </div>
         <div>

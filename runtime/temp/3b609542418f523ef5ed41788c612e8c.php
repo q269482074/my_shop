@@ -1,4 +1,4 @@
-<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\brand\add_brand.html";i:1566032302;}*/ ?>
+<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\brand\add_brand.html";i:1566201176;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

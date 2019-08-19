@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\category\add_cat.html";i:1566038488;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\category\add_cat.html";i:1566198214;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,10 +19,10 @@
         <div class="content info">
         <div>
             上级分类：
-            <select name="category" id="category">
+            <select name="parent_id">
                 <option value="0">顶级分类</option>
                 <?php if(is_array($cat) || $cat instanceof \think\Collection || $cat instanceof \think\Paginator): $i = 0; $__LIST__ = $cat;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-                <option value="<?php echo htmlentities($v['id']); ?>"><?php echo htmlentities($v['cat_name']); ?></option>
+                <option value="<?php echo htmlentities($v['id']); ?>" ><?php echo str_repeat('-',$v['level']*4); ?><?php echo htmlentities($v['cat_name']); ?></option>
                 <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
         </div>

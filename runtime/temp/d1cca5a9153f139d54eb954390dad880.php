@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\edit_goods.html";i:1565969178;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\edit_goods.html";i:1566201632;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,20 +25,20 @@
         <div class="content info">
             <div class="dropdown">
                 商品分类：
-                <select name="type_id" id="type_id">
+                <select name="cate_id" id="cate_id">
                     <option value="">请选择</option>
-                    <option value="">手机</option>
-                    <option value="">电脑</option>
-                    <option value="">冰箱</option>
+                    <?php if(is_array($cat) || $cat instanceof \think\Collection || $cat instanceof \think\Paginator): $i = 0; $__LIST__ = $cat;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                    <option value="<?php echo htmlentities($v['id']); ?>" <?php if($v['id'] == $info['cate_id']) echo 'selected="seleced"'; ?>><?php echo str_repeat('-',$v['level']*4); ?><?php echo htmlentities($v['cat_name']); ?></option>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                 </select>
             </div>
             <div class="dropdown">
                 商品品牌：
                 <select name="brand_id" id="brand_id">
                     <option value="">请选择</option>
-                    <option value="">手机</option>
-                    <option value="">电脑</option>
-                    <option value="">冰箱</option>
+                    <?php if(is_array($brand) || $brand instanceof \think\Collection || $brand instanceof \think\Paginator): $i = 0; $__LIST__ = $brand;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                    <option value="<?php echo htmlentities($v['id']); ?>" <?php if($v['id'] == $info['brand_id']) echo 'selected="seleced"'; ?>><?php echo htmlentities($v['brand_name']); ?></option>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                 </select>
             </div>
             <div>
