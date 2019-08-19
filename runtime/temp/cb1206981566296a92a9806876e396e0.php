@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html";i:1566032677;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html";i:1566201897;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,34 +21,44 @@
         <form>
             <div class="dropdown">
                 主分类：
-               <select name="type" id="type">
-                   <option value="">请选择</option>
-                   <option value="">手机</option>
-                   <option value="">电脑</option>
-                   <option value="">冰箱</option>
-               </select>
+                <select name="cate_id">
+                    <option value="0">顶级分类</option>
+                    <?php if(is_array($cat) || $cat instanceof \think\Collection || $cat instanceof \think\Paginator): $i = 0; $__LIST__ = $cat;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                    <option value="<?php echo htmlentities($v['id']); ?>" <?php if($v['id'] == $data['cate_id']) echo 'selected="selected"'; ?></option><?php echo str_repeat('-',$v['level']*4); ?><?php echo htmlentities($v['cat_name']); ?></option>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                </select>
             </div>
             <div class="dropdown">
                 品&nbsp;&nbsp;&nbsp;牌：
-               <select name="type" id="type">
-                   <option value="">请选择</option>
-                   <option value="">华为</option>
-                   <option value="">苹果</option>
-                   <option value="">小米</option>
-               </select>
+                <select name="brand_id">
+                    <option value="0">所有品牌</option>
+                    <?php if(is_array($brand) || $brand instanceof \think\Collection || $brand instanceof \think\Paginator): $i = 0; $__LIST__ = $brand;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                    <option value="<?php echo htmlentities($v['id']); ?>" <?php if($v['id'] == $data['brand_id']) echo 'selected="selected"'; ?>><?php echo htmlentities($v['brand_name']); ?></option>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                </select>
             </div>
             <div>
                 商品名称： <input type="text" name="goods_name">
             </div>
-            <div>
+            <!-- <div>
                 商品价格： 从<input type="text" name="min_price" size="8">到<input type="text" name="max_price" size="8">
-            </div>
+            </div> -->
             <div>
+                <?php $ios=input('get.is_sale'); ?>
                 是否上架：
-                <input type="radio" name="onsale" id="onsale" value="option1" checked>
+                <input type="radio" name="is_sale" id="is_sale" value="0" <?php if($ios == '0') echo 'checked="checked"'; ?> checked>
                 是
-                <input type="radio" name="onsale" id="onsale" value="option1">
+                <input type="radio" name="is_sale" id="is_sale" value="1" <?php if($ios == '1') echo 'checked="checked"'; ?>>
                 否
+            </div>
+            <!-- 排序方式 -->
+            <div>
+                排序方式：
+                <input type="radio" name="odby" id="odby" value="id_desc" checked="checked" /> 以添加时间降序
+                <input type="radio" name="odby" id="odby" value="id_asc" <?php if($data['odby'] == 'id_asc') echo 'checked="checked"'; ?> /> 以添加时间升序
+                <input type="radio" name="odby" id="odby" value="price_desc" <?php if($data['odby'] == 'price_desc') echo 'checked="checked"'; ?> /> 以价格降序 
+                <input type="radio" name="odby" id="odby" value="price_asc" <?php if($data['odby'] == 'price_asc') echo 'checked="checked"'; ?> /> 以价格升序
+                <button type="submit" class="btn btn-primary">搜索</button>
             </div>
         </form>
     </div>
@@ -71,14 +81,14 @@
             <tr>
                 <td><?php echo htmlentities($v['id']); ?></td>
                 <td><?php echo htmlentities($v['name']); ?></td>
-                <td>手机</td>
-                <td>华为</td>
+                <td><?php echo htmlentities($v['category']['cat_name']); ?></td>
+                <td><?php echo htmlentities($v['brand']['brand_name']); ?></td>
                 <td>
                     <img src="<?php echo htmlentities($v['img_url']); ?>" alt="">
                 </td>
                 <td><?php echo htmlentities($v['goods_price']); ?></td>
                 <td>是</td>
-                <td><?php echo date('Y-m-d H:i:s',$v['create_time']); ?></td>
+                <td><?php echo htmlentities($v['create_time']); ?></td>
                 <td><?php echo htmlentities($v['sort']); ?></td>
                 <td>
                     <a href="javascript:;" link="<?php echo url('admin/goods/editGoods','',false); ?>/id/<?php echo htmlentities($v['id']); ?>" class="edit">修改</a>
@@ -177,7 +187,7 @@ function search(curr)
     var fa = $('input[name=fa]').val();
     var ta = $('input[name=ta]').val();
     var odby = $('input[name=odby]:checked').val();
-    var is_onsale = $('input[name=is_onsale]:checked').val();
+    var is_sale = $('input[name=is_sale]:checked').val();
     if(goods_name)
     {
         url += '&goods_name='+goods_name;
@@ -210,9 +220,9 @@ function search(curr)
     {
         url += '&odby='+odby;
     }
-    if(is_onsale)
+    if(is_sale)
     {
-        url += '&is_onsale='+is_onsale;
+        url += '&is_sale='+is_sale;
     }
     location.href = url;
 }

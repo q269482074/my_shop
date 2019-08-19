@@ -6,16 +6,31 @@ class Goods extends Controller
 {
     public function goodsList()
     {
+        $data = [
+			'cate_id'	=> input('get.cate_id'),
+			'brand_id'	=> input('get.brand_id'),
+			'goods_name'	=> input('get.goods_name'),
+			'fp'	=> input('get.min_price'),
+			'tp'	=> input('get.max_price'),
+			'is_onsale'	=> input('get.is_onsale'),
+            'odby'	=> input('get.odby'),
+            'is_sale' => input('get.is_sale') ? input('get.is_sale') : '0',
+        ];
         $page_limit = 5;
-        $goods = model('goods')->search($page_limit);
+        $goods = model('goods')->search($data,$page_limit);
 		$page = $goods->currentPage(); //初始页
-		$count = $goods->total();//总记录数
+        $count = $goods->total();//总记录数
+        $cat = model('category')->getTree('category');
+        $brand = model('brand')->field('id,brand_name')->select();
 
         $this->assign([
             'goods' => $goods,
             'page_limit' => $page_limit,
             'page' => $page,
             'count' => $count,
+            'cat' => $cat,
+            'data' => $data,
+            'brand' => $brand
         ]);
         return $this->fetch();
     }
@@ -26,7 +41,7 @@ class Goods extends Controller
         {
             $data = [
                 'name' => input('post.name'),
-                'type_id' => input('post.type_id'),
+                'cate_id' => input('post.cate_id'),
                 'brand_id' => input('post.brand_id'),
                 'img_url' => input('post.goods_log'),
                 'price' => input('post.price'),
@@ -43,6 +58,13 @@ class Goods extends Controller
                 $this->error($ret);
             }
         }
+        $cat = model('category')->getTree('category');
+        $brand = model('brand')->field('id,brand_name')->select();
+
+        $this->assign([
+            'cat' => $cat,
+            'brand' => $brand,
+        ]);
         return $this->fetch();
     }
 
@@ -53,7 +75,7 @@ class Goods extends Controller
             $data = [
                 'id' => input('post.id'),
                 'name' => input('post.name'),
-                'type_id' => input('post.type_id'),
+                'cate_id' => input('post.cate_id'),
                 'brand_id' => input('post.brand_id'),
                 'img_url' => input('post.goods_log'),
                 'price' => input('post.price'),
@@ -72,9 +94,12 @@ class Goods extends Controller
         }
         $id = input('id');
         $info = db('goods')->where(['id'=>$id])->find();
-
+        $cat = model('category')->getTree('category');
+        $brand = model('brand')->field('id,brand_name')->select();
         $this->assign([
             'info' => $info,
+            'brand' => $brand,
+            'cat' => $cat,
         ]);
         return $this->fetch();
     }
