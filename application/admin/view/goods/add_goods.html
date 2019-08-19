@@ -23,20 +23,20 @@
         <div class="content info">
             <div class="dropdown">
                 商品分类：
-                <select name="type_id" id="type_id">
+                <select name="cate_id" id="cate_id">
                     <option value="">请选择</option>
-                    <option value="">手机</option>
-                    <option value="">电脑</option>
-                    <option value="">冰箱</option>
+                    {volist name="cat" id="v"}
+                    <option value="{$v.id}">{:str_repeat('-',$v.level*4)}{$v.cat_name}</option>
+                    {/volist}
                 </select>
             </div>
             <div class="dropdown">
                 商品品牌：
                 <select name="brand_id" id="brand_id">
                     <option value="">请选择</option>
-                    <option value="">手机</option>
-                    <option value="">电脑</option>
-                    <option value="">冰箱</option>
+                    {volist name="brand" id="v"}
+                    <option value="{$v.id}">{$v.brand_name}</option>
+                    {/volist}
                 </select>
             </div>
             <div>

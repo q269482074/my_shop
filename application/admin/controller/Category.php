@@ -6,7 +6,7 @@ class Category extends Controller
 {
     public function catList()
     {
-        $data = db('category')->select();
+        $data = model('category')->getTree('category');
 
         $this->assign([
             'data' => $data
@@ -20,6 +20,7 @@ class Category extends Controller
         {
             $data = [
                 'cat_name' => input('post.cat_name'),
+                'parent_id' => input('post.parent_id'),
             ];
             $ret = model('category')->add($data);
             if($ret == 1)
@@ -30,7 +31,7 @@ class Category extends Controller
             }
         }
 
-        $cat = db('category')->select();
+        $cat = model('category')->getTree('category');
         $this->assign([
             'cat' => $cat,
         ]);
@@ -57,7 +58,7 @@ class Category extends Controller
 
         $id = input('id');
         $info = db('category')->where(['id'=>$id])->find();
-        $cat = db('category')->select();
+        $cat = model('category')->getTree('category');
         $this->assign([
             'info' => $info,
             'cat' => $cat,

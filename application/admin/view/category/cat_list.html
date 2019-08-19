@@ -25,7 +25,7 @@
             </tr>
             {volist name="data" id="v"}
             <tr>
-                <td style="text-align: left;">{$v.cat_name}</td>
+                <td style="text-align: left;">{:str_repeat('-',$v.level*4)}{$v.cat_name}</td>
                 <td>
                     <a href="javascript:;" class="edit" link="{:url('admin/category/editCat','',false)}/id/{$v.id}">修改</a>
                     <a href="javascript:;">删除</a>

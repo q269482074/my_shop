@@ -18,10 +18,10 @@
         <div class="content info">
         <div>
             上级分类：
-            <select name="category" id="category">
+            <select name="parent_id">
                 <option value="0">顶级分类</option>
                 {volist name="cat" id="v"}
-                <option value="{$v.id}">{$v.cat_name}</option>
+                <option value="{$v.id}" >{:str_repeat('-',$v.level*4)}{$v.cat_name}</option>
                 {/volist}
             </select>
         </div>

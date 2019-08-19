@@ -40,7 +40,7 @@ input{
     border-radius: 5px;
 }
 
-#onsale{
+#is_sale,#odby{
     vertical-align: middle;
 }
 
@@ -72,3 +72,4 @@ td img{
     position: absolute;
     bottom: -50px;
 }
+
