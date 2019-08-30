@@ -1,0 +1,1208 @@
+---------------------------------------------------------------
+
+[2019-08-28T16:07:38+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.038003s] [吞吐率：26.31req/s] [内存消耗：1,278.59kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+
+[2019-08-28T16:13:26+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.099006s] [吞吐率：10.10req/s] [内存消耗：1,434.53kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:13:36+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.053003s] [吞吐率：18.87req/s] [内存消耗：1,434.53kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:15:47+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.041002s] [吞吐率：24.39req/s] [内存消耗：1,434.53kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:15:49+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.034001s] [吞吐率：29.41req/s] [内存消耗：1,323.30kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:15:54+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.039002s] [吞吐率：25.64req/s] [内存消耗：1,434.53kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:19:05+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,434.53kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:19:07+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.039002s] [吞吐率：25.64req/s] [内存消耗：1,323.30kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:19:20+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.088005s] [吞吐率：11.36req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:19:34+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.033002s] [吞吐率：30.30req/s] [内存消耗：1,434.53kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:19:34+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.026002s] [吞吐率：38.46req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:19:36+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.026002s] [吞吐率：38.46req/s] [内存消耗：1,323.36kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:19:36+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.021002s] [吞吐率：47.61req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:20:21+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,434.66kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:20:21+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.016001s] [吞吐率：62.50req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:22:14+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.030001s] [吞吐率：33.33req/s] [内存消耗：1,434.91kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:22:14+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.021001s] [吞吐率：47.62req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:22:15+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.040003s] [吞吐率：25.00req/s] [内存消耗：1,323.43kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:22:16+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.023001s] [吞吐率：43.48req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:22:18+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.032002s] [吞吐率：31.25req/s] [内存消耗：1,323.48kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:22:18+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.024001s] [吞吐率：41.66req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:23:40+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,434.91kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:23:40+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.024001s] [吞吐率：41.66req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:24:04+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.040002s] [吞吐率：25.00req/s] [内存消耗：1,323.43kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:24:04+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.023002s] [吞吐率：43.47req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:24:30+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,323.43kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:24:30+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.020001s] [吞吐率：50.00req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:24:46+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.030002s] [吞吐率：33.33req/s] [内存消耗：1,323.43kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:24:46+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.018001s] [吞吐率：55.55req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:24:57+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.040003s] [吞吐率：25.00req/s] [内存消耗：1,435.03kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:24:58+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.022002s] [吞吐率：45.45req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:25:28+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.033002s] [吞吐率：30.30req/s] [内存消耗：1,323.43kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:25:28+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.020001s] [吞吐率：50.00req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:25:47+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,323.43kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:25:47+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.024002s] [吞吐率：41.66req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:26:26+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.031002s] [吞吐率：32.26req/s] [内存消耗：1,436.03kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:26:26+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.018001s] [吞吐率：55.55req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:26:34+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.061004s] [吞吐率：16.39req/s] [内存消耗：1,436.03kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:26:34+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.023001s] [吞吐率：43.48req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:29:20+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,323.80kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:29:20+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.027002s] [吞吐率：37.03req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:30:17+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.030002s] [吞吐率：33.33req/s] [内存消耗：1,323.80kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:30:17+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.019001s] [吞吐率：52.63req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:30:20+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.030001s] [吞吐率：33.33req/s] [内存消耗：1,323.86kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:30:20+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.023001s] [吞吐率：43.48req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:31:48+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.055004s] [吞吐率：18.18req/s] [内存消耗：1,323.80kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:31:48+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.022001s] [吞吐率：45.45req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:32:34+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.062004s] [吞吐率：16.13req/s] [内存消耗：1,436.03kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:32:34+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.024001s] [吞吐率：41.66req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:32:35+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.042002s] [吞吐率：23.81req/s] [内存消耗：1,323.80kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:32:35+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.022001s] [吞吐率：45.45req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:33:59+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.031002s] [吞吐率：32.26req/s] [内存消耗：1,436.03kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:33:59+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.023002s] [吞吐率：43.47req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:34:34+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.025001s] [吞吐率：40.00req/s] [内存消耗：1,323.80kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:34:34+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.031002s] [吞吐率：32.26req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:35:12+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.028002s] [吞吐率：35.71req/s] [内存消耗：1,323.80kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:35:12+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.018001s] [吞吐率：55.55req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:35:25+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.029002s] [吞吐率：34.48req/s] [内存消耗：1,323.80kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:35:25+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.020001s] [吞吐率：50.00req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:35:40+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.033002s] [吞吐率：30.30req/s] [内存消耗：1,436.03kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:35:40+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.022001s] [吞吐率：45.45req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:39:39+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.026002s] [吞吐率：38.46req/s] [内存消耗：1,436.03kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:39:39+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.022001s] [吞吐率：45.45req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:39:48+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,323.80kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:39:48+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.023001s] [吞吐率：43.48req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:40:06+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.030001s] [吞吐率：33.33req/s] [内存消耗：1,323.80kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:40:07+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.023001s] [吞吐率：43.48req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:40:47+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.046002s] [吞吐率：21.74req/s] [内存消耗：1,323.80kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:40:47+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.024002s] [吞吐率：41.66req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:42:17+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,436.78kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:42:17+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.025002s] [吞吐率：40.00req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:42:59+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.027001s] [吞吐率：37.04req/s] [内存消耗：1,324.05kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:42:59+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.024002s] [吞吐率：41.66req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:43:29+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.031002s] [吞吐率：32.26req/s] [内存消耗：1,324.05kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:43:29+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.024001s] [吞吐率：41.66req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:43:40+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.031001s] [吞吐率：32.26req/s] [内存消耗：1,324.05kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:43:40+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.019001s] [吞吐率：52.63req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:44:38+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,436.78kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:44:39+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.024001s] [吞吐率：41.66req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:45:02+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.031001s] [吞吐率：32.26req/s] [内存消耗：1,324.05kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:45:02+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.022002s] [吞吐率：45.45req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:45:17+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.029002s] [吞吐率：34.48req/s] [内存消耗：1,324.05kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:45:17+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.024001s] [吞吐率：41.66req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2019-08-28T16:45:52+08:00] 127.0.0.1 GET www.myshop.com/
+[运行时间：0.044003s] [吞吐率：22.73req/s] [内存消耗：1,324.05kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1565776474; QC006=hvvyqr6ivj2ksr9qstpvgaq; QC008=1565776476.1565776476.1565776476.1; __uuid=48f36088-37da-c18a-8a99-0eebbe51de6e; __dfp=a0172fa00df1b1457baad0d4120b7c44fcf79e6d382e65f7675f2889a7a57724f7@1567072477786@1565776477786; pgv_pvi=4222451712',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2019-08-28T16:45:52+08:00] 127.0.0.1 GET www.myshop.com/static/index/css/bootstrap.min.css.map
+[运行时间：0.022002s] [吞吐率：45.45req/s] [内存消耗：953.30kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
