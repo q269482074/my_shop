@@ -1,0 +1,40 @@
+a:hover{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    height: 42px;
+    background-color: #333333;
+}
+.header .header-contriner{
+    width: 1226px;
+    height: 100%;
+    margin: auto;
+}
+
+.header .login{
+    float: right;
+    line-height: 42px;
+}
+.header .login .login-item{
+    float: left;
+}
+.header .login .login-item a,.header .login .login-item,.header .login .login-item span{
+    color: #fff;
+}
+
+
+
+.header .cart{
+    width: 120px;
+    float: right;
+    color: #fff;
+    line-height: 42px;
+    margin-left: 50px;
+    background-color: #424242;
+    text-align: center;
+}
+.header .cart:hover{
+    background-color: #fff;
+    color: orange;
+}
