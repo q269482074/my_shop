@@ -115,6 +115,9 @@
 .slider .category-item .category-content .category2{
 	color: orange;
 }
+.slider .category-item .category-content .category-content-item{
+	padding: 5px;
+}
 .slider .category-item .category-content ul .category3{
 	float: left;
 	text-indent: 0;
