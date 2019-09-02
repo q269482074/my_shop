@@ -1,0 +1,130 @@
+.slider{
+	width: 1226px;
+	height: 460px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: auto;
+}
+/* .slider .list .item img:hover{
+	transform: scale(1.1);
+} */
+.slider .list{
+	position: absolute;
+}
+.slider .list .item{
+	width: 1226px;
+	height: 460px;
+	float: left;
+}
+.slider .list .item img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	transition: all 0.5s ease;
+}
+.slider .prev,.slider .next{
+	top: 100px;
+	position: absolute;
+}
+.slider .next{
+	right: 0;
+}
+.slider .pagination{
+	bottom: 4px;
+	right: 30px;
+	position: absolute;
+}
+.slider .pagination .bullet{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	line-height: 20px;
+	text-align: center;
+	float: left;
+	border: 1px solid #000000;
+	background-color: #fff;
+	margin-left: 5px;
+}
+.slider .pagination .bullet.df{
+	background: #FFA500;
+}
+.slider .nav-bottom{
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	height: 20px;
+	width: 100%;
+	color: #fff;
+	line-height: 20px;
+	font-size: 12px;
+}
+.slider .nav-bottom .slider-content{
+	display: none;
+}
+.slider .nav-bottom .slider-content.cl{
+	display: block;
+	text-indent: 1em;
+}
+
+
+.slider .category-list{
+	height: 100%;
+	width: 233px;
+	background-color: rgba(160, 160, 160, .8);
+	position: absolute;
+	left: 0;
+}
+.slider .category-list ul li{
+    height: 42px;
+    line-height: 42px;
+    font-size: 15px;
+	text-indent: 2em;
+	margin-top: 4px;
+	position: relative;
+}
+.slider .category-list ul li a{
+    color: #ffffff;
+}
+.slider .category-list ul li a span{
+	position: absolute;
+	right: 20px;
+}
+.slider .category-list ul li.on{
+	background-color: orange;
+}
+
+.slider .category-content{
+	min-width: 530px;
+	height: 458px;
+	position: absolute;
+	background-color: #ffffff;
+	top: 0;
+	left: 233px;
+	border: 1px solid #b0b0b0;
+	box-shadow: 5px 5px 8px#b0b0b0;
+	z-index: 999;
+	display:none;
+}
+.slider .category-content .category-content-item::after,.slider .category-content .category-content-item::before{
+	content: "";
+	clear: both;
+	display: block;
+}
+.slider .category-item .category-content .category2{
+	color: orange;
+}
+.slider .category-item .category-content ul .category3{
+	float: left;
+	text-indent: 0;
+	margin-top: -20px;
+}
+.slider .category-item .category-content ul .category3:first-of-type{
+	margin-left: 0; 
+}
+.slider .category-item .category-content ul .category3 a{
+	color: #000;
+}
+
+
