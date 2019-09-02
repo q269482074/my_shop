@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1567406797;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1567422532;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="/static/index/layui/css/layui.css">
     <link rel="stylesheet" href="/static/index/css/index.css">
     <link rel="stylesheet" href="/static/index/css/slider.css">
+    <link rel="stylesheet" href="/static/index/css/swiper.min.css">
     <script src="/static/index/js/jquery-3.3.1.min.js"></script>
     <script src="/static/index/layui/layui.js"></script>
     <script src="/static/index/js/bootstrap.min.js"></script>
     <script src="/static/index/js/index.js"></script>
     <script src="/static/index/js/slider.js"></script>
     <script src="/static/index/js/animate.js"></script>
-    <title>Document</title>
+    <script src="/static/index/js/swiper.min.js"></script>
+    <title>首页</title>
 </head>
 <body>
     <div class="main">
@@ -1208,6 +1210,234 @@
             </ul>
         </div>
         <!-- 轮播图end -->
+
+        <!-- 商品区域 -->
+        <div class="main-content">
+            <!-- 闪购start -->
+            <div class="flashsale">
+                <div class="flashsale-title">
+                    闪购
+                </div>
+                <div class="flashsale-content">
+                    <div class="flashsale-item">
+                        <div class="round">
+                            10:00 场
+                        </div>
+                        <img src="/static/index/images/flashsale.png" alt="">
+                        <div class="desc">距离结束还有</div>
+                        <div class="countdown" id="countdown">
+                            <span>01</span>
+                            <i>:</i>
+                            <span>01</span>
+                            <i>:</i>
+                            <span>01</span>
+                        </div>
+                    </div>
+                    <div class="flashsale-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="content">
+                                        <img src="/static/index/images/flashsale1.jpg" alt="">
+                                        <div class="swiper-slide-title">小米水质TDS测笔 白色</div>
+                                        <div class="swiper-slide-attr">准确检测家中水质纯度</div>
+                                        <div class="swiper-slide-price">
+                                            <span class="now">29元</span>
+                                            <span class="past">39元</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content">
+                                        <img src="/static/index/images/flashsale3.jpg" alt="">
+                                        <div class="swiper-slide-title">小米蓝牙耳机(K歌版)白色</div>
+                                        <div class="swiper-slide-attr">我的死人KTV</div>
+                                        <div class="swiper-slide-price">
+                                            <span class="now">228元</span>
+                                            <span class="past">249元</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content">
+                                        <img src="/static/index/images/flashsale7.png" alt="">
+                                        <div class="swiper-slide-title">小米笔记本电脑</div>
+                                        <div class="swiper-slide-attr">全面均衡的国民轻薄本</div>
+                                        <div class="swiper-slide-price">
+                                            <span class="now">2999元</span>
+                                            <span class="past">3399元</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content">
+                                        <img src="/static/index/images/flashsale2.png" alt="">
+                                        <div class="swiper-slide-title">小米米家热水壶</div>
+                                        <div class="swiper-slide-attr">高效过滤 享安心好水</div>
+                                        <div class="swiper-slide-price">
+                                            <span class="now">99元</span>
+                                            <span class="past">129元</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content">
+                                        <img src="/static/index/images/flashsale3.jpg" alt="">
+                                        <div class="swiper-slide-title">小米蓝牙耳机(K歌版)白色</div>
+                                        <div class="swiper-slide-attr">我的死人KTV</div>
+                                        <div class="swiper-slide-price">
+                                            <span class="now">228元</span>
+                                            <span class="past">249元</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content">
+                                        <img src="/static/index/images/flashsale7.png" alt="">
+                                        <div class="swiper-slide-title">小米笔记本电脑</div>
+                                        <div class="swiper-slide-attr">全面均衡的国民轻薄本</div>
+                                        <div class="swiper-slide-price">
+                                            <span class="now">2999元</span>
+                                            <span class="past">3399元</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content">
+                                        <img src="/static/index/images/flashsale2.png" alt="">
+                                        <div class="swiper-slide-title">小米米家热水壶</div>
+                                        <div class="swiper-slide-attr">高效过滤 享安心好水</div>
+                                        <div class="swiper-slide-price">
+                                            <span class="now">99元</span>
+                                            <span class="past">129元</span>
+                                        </div>
+                                    </div>
+                                </div> <div class="swiper-slide">
+                                    <div class="content">
+                                        <img src="/static/index/images/flashsale3.jpg" alt="">
+                                        <div class="swiper-slide-title">小米蓝牙耳机(K歌版)白色</div>
+                                        <div class="swiper-slide-attr">我的死人KTV</div>
+                                        <div class="swiper-slide-price">
+                                            <span class="now">228元</span>
+                                            <span class="past">249元</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content">
+                                        <img src="/static/index/images/flashsale7.png" alt="">
+                                        <div class="swiper-slide-title">小米笔记本电脑</div>
+                                        <div class="swiper-slide-attr">全面均衡的国民轻薄本</div>
+                                        <div class="swiper-slide-price">
+                                            <span class="now">2999元</span>
+                                            <span class="past">3399元</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content">
+                                        <img src="/static/index/images/flashsale2.png" alt="">
+                                        <div class="swiper-slide-title">小米米家热水壶</div>
+                                        <div class="swiper-slide-attr">高效过滤 享安心好水</div>
+                                        <div class="swiper-slide-price">
+                                            <span class="now">99元</span>
+                                            <span class="past">129元</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 闪购end -->
+
+
+        </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
+
+
+<script type='text/javascript'>
+
+// 倒计时
+var o=document.getElementById('countdown');
+gettime();
+function gettime(){
+    var endtime=new Date('2019/09/13 19:40:00').getTime();//截止时间
+    var nowtime=new Date();//当前时间
+    //时间差  单位是秒
+    var difftime=parseInt((endtime-nowtime)/1000);
+    //转换为时分秒
+    var h,m,s;
+    h=parseInt(difftime/3600);
+    m=parseInt(difftime/60)%60;
+    s=difftime%60;
+    //将时分秒转化为双位数
+    h=setNum(h);
+    m=setNum(m);
+    s=setNum(s);
+    if( s >= 0){
+        setTimeout(gettime,1000);
+        o.innerHTML = '<span>'+h+'</span>'+'<i>:</i>'+'<span>'+m+'</span>'+"<i>:</i>"+'<span>'+s+'</span>';
+    }else{
+        o.innerHTML = '<span>'+'00'+'</span>'+'<i>:</i>'+'<span>'+'00'+'</span>'+"<i>:</i>"+'<span>'+'00'+'</span>';
+    }
+};
+function setNum(num){
+    if(num<10){
+        num='0'+num;
+    }
+    return num;
+}
+
+
+// 闪购滑动
+var mySwiper = new Swiper('.swiper-container',{
+    slidesPerView : 4,
+    slidesPerGroup : 4,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+})
+$('.swiper-slide').css('width','235px');
+</script>
+
+
+
+
+
+
+
+
+
