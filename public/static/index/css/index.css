@@ -202,8 +202,9 @@ a:hover{
 .flashsale .flashsale-content .flashsale-slider .swiper-container{
     margin-left: 15px;
 }
-.flashsale .flashsale-content .flashsale-slider .swiper-wrapper .swiper-slide{
+.flashsale .flashsale-content .flashsale-slider .swiper-container .swiper-wrapper .swiper-slide{
     height: 340px;
+    width: 235px;
     text-align: center;
     margin-left: 10px;
     background-color: #ffffff;
@@ -232,4 +233,85 @@ a:hover{
 .flashsale .flashsale-content .flashsale-slider .swiper-wrapper .swiper-slide .content .swiper-slide-price .past{
     color: #adadad;
     text-decoration: line-through;
+}
+
+
+.floor{
+    width: 1226px;
+    min-height: 200px;
+    /* border: 1px solid black; */
+    margin: 30px auto;
+    background-color: #fff;
+}
+.floor .floor-title{
+    width: 930px;
+    height: 40px;
+    margin: auto;
+}
+.floor .floor-title .title-line{
+    float: left;
+}
+.floor .floor-title .title-line.title-name{
+    color: rgb(158, 145, 145);
+    font-size: 24px;
+}
+.floor .floor-title .title-line1{
+    width: 200px;
+    border: 1px solid rgb(158, 145, 145);
+    margin-top: 14.5px;
+}
+.floor .floor-title .title-line2{
+    width: 200px;
+    border: 3px solid rgb(158, 145, 145);
+    margin-top: 13px;
+}
+
+.floor .floor-goods::after,.floor .floor-goods::before{
+    content: "";
+    clear: both;
+    display: block;
+}
+.floor .floor-goods .floor-goods-item{
+    width: 243px;
+    height: 300px;
+    /* border: 1px solid black; */
+    float: left;
+    margin: 1px 0 0 1.8px;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+.floor .floor-goods .floor-goods-info{
+    width: 100%;
+    height: 100%;
+}
+.floor .floor-goods .floor-goods-info img{
+    width: 205px;
+    height: 151px;
+}
+.floor .floor-goods .floor-goods-info .goods-name{
+    margin-top: 5px;
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.floor .floor-goods .floor-goods-info .goods-pj{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 10px;
+    color: #b6b6b6;
+    text-align: left;
+}
+.floor .floor-goods .floor-goods-info .price-xl{
+    width: 100%;
+    margin-top: 15px;
+    font-size: 10px;
+    text-align: left;
+    color: #b6b6b6;
+    display: flex;
+    justify-content: space-between;
 }
