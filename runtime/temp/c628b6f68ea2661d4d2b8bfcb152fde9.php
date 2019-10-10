@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1570696352;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1570699255;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -739,56 +739,51 @@
                         <a href="#">
                             笔记本 平板<span>></span>
                             <div class="category-content">
-                                <ul>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        笔记本 平板
-                                    </li>
-                                </ul>
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">IPHONE</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">OPPO</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三星</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">荣耀</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">手机套</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">贴膜</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">数据线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">充电器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">耳机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机饰品</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">移动电源</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">数码配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">数码相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">单反相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三脚架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">读卡器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手柄</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">电池</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -796,56 +791,51 @@
                         <a href="#">
                             家电 插线板<span>></span>
                             <div class="category-content">
-                                <ul>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        家电 插线板
-                                    </li>
-                                </ul>
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">IPHONE</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">OPPO</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三星</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">荣耀</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">手机套</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">贴膜</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">数据线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">充电器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">耳机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机饰品</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">移动电源</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">数码配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">数码相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">单反相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三脚架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">读卡器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手柄</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">电池</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -853,56 +843,51 @@
                         <a href="#">
                             出行 穿戴<span>></span>
                             <div class="category-content">
-                                <ul>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        出行 穿戴
-                                    </li>
-                                </ul>
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">IPHONE</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">OPPO</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三星</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">荣耀</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">手机套</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">贴膜</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">数据线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">充电器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">耳机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机饰品</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">移动电源</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">数码配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">数码相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">单反相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三脚架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">读卡器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手柄</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">电池</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -910,56 +895,51 @@
                         <a href="#">
                             智能 路由器<span>></span>
                             <div class="category-content">
-                                <ul>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        智能 路由器
-                                    </li>
-                                </ul>
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">IPHONE</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">OPPO</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三星</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">荣耀</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">手机套</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">贴膜</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">数据线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">充电器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">耳机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机饰品</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">移动电源</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">数码配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">数码相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">单反相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三脚架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">读卡器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手柄</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">电池</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -967,56 +947,51 @@
                         <a href="#">
                             电源 配件<span>></span>
                             <div class="category-content">
-                                <ul>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        电源 配件
-                                    </li>
-                                </ul>
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">IPHONE</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">OPPO</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三星</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">荣耀</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">手机套</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">贴膜</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">数据线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">充电器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">耳机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机饰品</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">移动电源</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">数码配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">数码相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">单反相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三脚架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">读卡器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手柄</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">电池</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -1024,56 +999,51 @@
                         <a href="#">
                             健康 儿童<span>></span>
                             <div class="category-content">
-                                <ul>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        健康 儿童
-                                    </li>
-                                </ul>
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">IPHONE</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">OPPO</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三星</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">荣耀</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">手机套</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">贴膜</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">数据线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">充电器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">耳机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机饰品</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">移动电源</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">数码配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">数码相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">单反相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三脚架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">读卡器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手柄</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">电池</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -1081,56 +1051,51 @@
                         <a href="#">
                             耳机 音箱<span>></span>
                             <div class="category-content">
-                                <ul>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        耳机 音箱
-                                    </li>
-                                </ul>
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">IPHONE</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">OPPO</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三星</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">荣耀</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">手机套</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">贴膜</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">数据线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">充电器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">耳机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机饰品</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">移动电源</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">数码配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">数码相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">单反相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三脚架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">读卡器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手柄</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">电池</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -1138,56 +1103,51 @@
                         <a href="#">
                             生活 箱包<span>></span>
                             <div class="category-content">
-                                <ul>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                        <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                    <li>
-                                        <img src="/static/index/images/xiaomi1.png" alt="">
-                                        生活 箱包
-                                    </li>
-                                </ul>
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">IPHONE</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">OPPO</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三星</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">荣耀</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">手机配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">手机套</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">贴膜</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">数据线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">充电器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">耳机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机饰品</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">移动电源</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手机支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="category-content-item">
+                                    <a class="category2" href="javascript:;">数码配件</a>
+                                    <ul>
+                                        <li class="category3"><a href="javascript:;">数码相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">单反相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">三脚架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">读卡器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">手柄</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="category3"><a href="javascript:;">电池</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </li>
