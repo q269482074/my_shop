@@ -153,6 +153,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 .flashsale .flashsale-title{
     width: 100%;
@@ -236,6 +237,45 @@ a:hover{
 }
 
 
+
+/* 侧边栏 */
+/* .sidebar{
+    width: 50px;
+    min-height: 300px;
+    border: 1px solid black;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    margin-left: 622px;
+} */
+.sidebar{
+    width: 50px;
+    min-height: 300px;
+    position: absolute;
+    top: 730px;
+    left: 50%;
+    margin-left: 622px;
+    background-color: #fff;
+    padding: 8px;
+}
+.sidebar .sidebar-type{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    padding-top: 10px;
+    cursor: pointer;
+}
+.sidebar .sidebar-type.on{
+    color: #e53934;
+}
+.sidebar .sidebar-type:hover{
+    background-color: #e53934;
+    color: #fff;
+}
+
+
+
 .floor{
     width: 1226px;
     min-height: 200px;
@@ -314,4 +354,14 @@ a:hover{
     color: #b6b6b6;
     display: flex;
     justify-content: space-between;
+}
+
+.footer{
+    width: 1226px;
+    height: 200px;
+    text-align: center;
+    background-color: #fff;
+    margin: auto;
+    line-height: 200px;
+    font-size: 50px;
 }
