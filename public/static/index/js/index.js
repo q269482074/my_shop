@@ -64,5 +64,4 @@ $(function(){
             $('.sidebar-type').removeClass('on');
         }
     });
-    console.log($(window).scrollTop());
 })
