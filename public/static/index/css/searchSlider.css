@@ -1,0 +1,68 @@
+.slider{
+	width: 890px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.slider .list .item img:hover{
+	transform: scale(1.1);
+}
+.slider .list{
+	position: absolute;
+}
+.slider .list .item{
+	width: 890px;
+	height: 400px;
+	float: left;
+}
+.slider .list .item img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	transition: all 0.5s ease;
+}
+.slider .prev,.slider .next{
+	top: 100px;
+	position: absolute;
+}
+.slider .next{
+	right: 0;
+}
+.slider .pagination{
+	bottom: 0px;
+	right: 30px;
+	position: absolute;
+}
+.slider .pagination .bullet{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	line-height: 20px;
+	text-align: center;
+	float: left;
+	border: 1px solid #000000;
+	background-color: #fff;
+	margin-left: 5px;
+}
+.slider .pagination .bullet.df{
+	background: #FFA500;
+}
+.slider .nav-bottom{
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .3);
+	height: 20px;
+	width: 100%;
+	color: #fff;
+	line-height: 20px;
+	font-size: 12px;
+}
+.slider .nav-bottom .slider-content{
+	display: none;
+}
+.slider .nav-bottom .slider-content.cl{
+	display: block;
+	text-indent: 1em;
+}
