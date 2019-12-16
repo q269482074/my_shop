@@ -1,4 +1,4 @@
-<?php /*a:1:{s:81:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\search_type.html";i:1575898627;}*/ ?>
+<?php /*a:1:{s:81:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\search_type.html";i:1576493517;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +13,7 @@
     <script src="/static/index/js/bootstrap.min.js"></script>
     <script src="/static/index/js/slider.js"></script>
     <script src="/static/index/js/animate.js"></script>
+    <script src="/static/index/js/swiper.min.js"></script>
     <title>搜索页面</title>
 </head>
 <body>
@@ -125,8 +126,214 @@
                 <!-- 右边栏end -->
             </div>
             <!-- 头部内容end -->
+
+            <!-- 广告栏start -->
+            <div class="ad">
+                广告栏
+            </div>
+            <!-- 广告栏end -->
+
+            <!-- 商品楼层start -->
+            <div class="floor">
+                <div class="floor-title">
+                    <div class="title-line title-line1"></div><div class="title-line title-line2"></div>
+                    <div class="title-line title-name">&nbsp;&nbsp;家用电器&nbsp;&nbsp;</div>
+                    <div class="title-line title-line2"></div><div class="title-line title-line1"></div>
+                </div>
+                <div class="floor_content">
+                    <div class="floor_content_left">
+                        <div>广告图片</div>
+                    </div>
+                    <div class="floor_content_right">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-item">
+                                        <div class="swiper-slide-img">
+                                            <img src="/static/index/images/flashsale1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide-title">小米( Xiaomi )水质TDS测笔白色速度快测试准确 分离式 一级只能</div>
+                                        <div class="swiper-slide-price">￥2999</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-item">
+                                        <div class="swiper-slide-img">
+                                            <img src="/static/index/images/flashsale1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide-title">小米( Xiaomi )水质TDS测笔白色速度快测试准确 分离式 一级只能</div>
+                                        <div class="swiper-slide-price">￥2999</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-item">
+                                        <div class="swiper-slide-img">
+                                            <img src="/static/index/images/flashsale1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide-title">小米( Xiaomi )水质TDS测笔白色速度快测试准确 分离式 一级只能</div>
+                                        <div class="swiper-slide-price">￥2999</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-item">
+                                        <div class="swiper-slide-img">
+                                            <img src="/static/index/images/flashsale1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide-title">小米( Xiaomi )水质TDS测笔白色速度快测试准确 分离式 一级只能</div>
+                                        <div class="swiper-slide-price">￥2999</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-item">
+                                        <div class="swiper-slide-img">
+                                            <img src="/static/index/images/flashsale1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide-title">小米( Xiaomi )水质TDS测笔白色速度快测试准确 分离式 一级只能</div>
+                                        <div class="swiper-slide-price">￥2999</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-item">
+                                        <div class="swiper-slide-img">
+                                            <img src="/static/index/images/flashsale1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide-title">小米( Xiaomi )水质TDS测笔白色速度快测试准确 分离式 一级只能</div>
+                                        <div class="swiper-slide-price">￥2999</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-item">
+                                        <div class="swiper-slide-img">
+                                            <img src="/static/index/images/flashsale1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide-title">小米( Xiaomi )水质TDS测笔白色速度快测试准确 分离式 一级只能</div>
+                                        <div class="swiper-slide-price">￥2999</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-item">
+                                        <div class="swiper-slide-img">
+                                            <img src="/static/index/images/flashsale1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide-title">小米( Xiaomi )水质TDS测笔白色速度快测试准确 分离式 一级只能</div>
+                                        <div class="swiper-slide-price">￥2999</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-item">
+                                        <div class="swiper-slide-img">
+                                            <img src="/static/index/images/flashsale1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide-title">小米( Xiaomi )水质TDS测笔白色速度快测试准确 分离式 一级只能</div>
+                                        <div class="swiper-slide-price">￥2999</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="ranking">
+                            <div class="ranking_header">
+                                人气商品
+                            </div>
+                            <div class="ranking_item_top3">
+                                <div class="ranking_info ranking_item_img">
+                                    <i>1</i>
+                                    <img src="/static/index/images/flashsale1.jpg" alt="">
+                                </div>
+                                <div class="ranking_info ranking_item_info">
+                                    <div class="info_name">
+                                        <a href="javascript:;">啊手机客户端卡升级换代看见撒的谎卡山东矿机撒劲肯定</a> 
+                                    </div>
+                                    <div class="info_price">
+                                        ￥23123
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ranking_item_top3">
+                                <div class="ranking_info ranking_item_img">
+                                    <i>2</i>
+                                    <img src="/static/index/images/flashsale1.jpg" alt="">
+                                </div>
+                                <div class="ranking_info ranking_item_info">
+                                    <div class="info_name">
+                                        <a href="javascript:;">啊手机客户端卡升级换代看见撒的谎卡山东矿机撒劲肯定</a> 
+                                    </div>
+                                    <div class="info_price">
+                                        ￥23123
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ranking_item_top3">
+                                <div class="ranking_info ranking_item_img">
+                                    <i>3</i>
+                                    <img src="/static/index/images/flashsale1.jpg" alt="">
+                                </div>
+                                <div class="ranking_info ranking_item_info">
+                                    <div class="info_name">
+                                        <a href="javascript:;">啊手机客户端卡升级换代看见撒的谎卡山东矿机撒劲肯定</a> 
+                                    </div>
+                                    <div class="info_price">
+                                        ￥23123
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ranking_item">
+                                <div class="goods_name">
+                                    4&nbsp;&nbsp;&nbsp;<a href="jvascript:;">啊手机客户端卡升级换代看见撒的谎卡山东矿机撒劲肯定</a>
+                                </div>
+                            </div>
+                            <div class="ranking_item">
+                                <div class="goods_name">
+                                    5&nbsp;&nbsp;&nbsp;<a href="jvascript:;">啊手机客户端卡升级换代看见撒的谎卡山东矿机撒劲肯定</a>
+                                </div>
+                            </div>
+                            <div class="ranking_item">
+                                <div class="goods_name">
+                                    6&nbsp;&nbsp;&nbsp;<a href="jvascript:;">啊手机客户端卡升级换代看见撒的谎卡山东矿机撒劲肯定</a>
+                                </div>
+                            </div>
+                            <div class="ranking_item">
+                                <div class="goods_name">
+                                    7&nbsp;&nbsp;&nbsp;<a href="jvascript:;">啊手机客户端卡升级换代看见撒的谎卡山东矿机撒劲肯定</a>
+                                </div>
+                            </div>
+                            <div class="ranking_item" style="border: none;">
+                                <div class="goods_name">
+                                    8&nbsp;&nbsp;&nbsp;<a href="jvascript:;">啊手机客户端卡升级换代看见撒的谎卡山东矿机撒劲肯定</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 商品楼层end -->
+            
         </div>
         <!-- 主题内容end -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 </body>
 </html>
+
+
+<script> 
+var mySwiper = new Swiper('.swiper-container',{
+    slidesPerView: 3,
+    slidesPerColumn : 2,
+    slidesPerColumnFill : 'column',
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+})
+</script>
