@@ -103,8 +103,9 @@
 .header_content_left{
     width: 300px;
     min-height: 150px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
+    background-color: #fff;
     left: 0;
 }
 .header_content_left_title{
@@ -128,7 +129,7 @@
     color: rgb(128, 125, 125);
 }
 .header_content_left > ul > li > span > a:hover{
-    color: red;
+    color: red; 
 }
 
 
@@ -136,10 +137,213 @@
 .hreader_content_right{
     min-width: 200px;
     min-height: 150px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
     right: 0;
 }
+
+
+
+/* 广告栏 */
+.ad{
+    width: 1226px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: orange;
+    line-height: 150px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+/* 商品楼层 */
+.floor{
+    width: 1226px;
+    /* border: 1px solid black; */
+    margin: 30px auto;
+    background-color: #fff;
+}
+.floor > .floor-title{
+    width: 930px;
+    height: 40px;
+    margin: 15px auto;
+}
+.floor > .floor-title > .title-line{
+    float: left;
+}
+.floor > .floor-title > .title-line.title-name{
+    color: rgb(158, 145, 145);
+    font-size: 24px;
+}
+.floor > .floor-title > .title-line1{
+    width: 200px;
+    border: 1px solid rgb(158, 145, 145);
+    margin-top: 14.5px;
+}
+.floor > .floor-title > .title-line2{
+    width: 200px;
+    border: 3px solid rgb(158, 145, 145);
+    margin-top: 13px;
+}
+
+.floor_content{
+    width: 1226px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.floor_content > .floor_content_left{
+    width: 290px;
+    height: 580px;
+    /* border: 1px solid red; */
+    background-color: orange;
+   
+}
+.floor_content > .floor_content_left > div{
+    font-size: 40px;
+    writing-mode: vertical-lr;
+    writing-mode: tb-rl;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 180px;
+}
+
+
+.floor_content > .floor_content_right{
+    width: 900px;
+    height: 580px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.floor_content > .floor_content_right > .swiper-container{
+    width: 600px;
+    height: 580px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.floor_content > .floor_content_right > .swiper-container > .swiper-wrapper{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+.floor_content > .floor_content_right > .swiper-container > .swiper-wrapper > .swiper-slide{
+    float: left;
+    width: 190px;
+    height: 277px;
+    /* border: 1px solid orange; */
+}
+.swiper-slide > .swiper-slide-item{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.swiper-slide > .swiper-slide-item:hover{
+    border: 1px solid orange;
+}
+.swiper-slide > .swiper-slide-item > .swiper-slide-img{
+    width: 180px;
+    height: 180px;
+    margin: auto;
+}
+.swiper-slide > .swiper-slide-item > .swiper-slide-img > img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide > .swiper-slide-item > .swiper-slide-title{
+    margin: 10px auto;
+    padding: 0 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.swiper-slide > .swiper-slide-item > .swiper-slide-price{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+
+
+.floor_content > .floor_content_right > .ranking{
+    width: 290px;
+    height: 580px;
+    /* border: 1px solid red; */
+}
+.ranking > .ranking_header{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(175, 173, 169);
+    margin-bottom: 20px;
+}
+.ranking > .ranking_item_top3{
+    min-height: 10px;
+    border-bottom: 1px solid red;
+    margin: 5px 5px;
+}
+.ranking > .ranking_item_top3:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.ranking > .ranking_item_top3 > .ranking_info{
+    float: left;
+    margin-bottom: 20px;
+}
+.ranking > .ranking_item_top3 > .ranking_item_img{
+    width: 134px;
+    height: 80px;
+    position: relative;
+    cursor: pointer;
+}
+.ranking > .ranking_item_top3 > .ranking_item_img > img{
+    width: 100%;
+    height: 100%;
+}
+.ranking > .ranking_item_top3 > .ranking_item_img > i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px 8px;
+    background-color: rgb(235, 128, 128);
+    color: #fff;
+    font-style: normal;
+}
+
+.ranking > .ranking_item_top3 > .ranking_item_info{
+    width: 144px;
+    height: 80px;
+}
+.ranking > .ranking_item_top3 > .ranking_item_info > .info_name{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.ranking > .ranking_item_top3 > .ranking_item_info > .info_price{
+    margin-top: 18px;
+    color: red;
+    cursor: pointer;
+}
+
+.ranking > .ranking_item{
+    margin: 10px 5px;
+    border-bottom: 1px solid red;
+}
+.ranking > .ranking_item > .goods_name{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
 
 
 
