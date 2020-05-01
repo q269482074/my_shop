@@ -1,4 +1,4 @@
-<?php /*a:1:{s:81:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\search_type.html";i:1576579478;}*/ ?>
+<?php /*a:1:{s:81:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\search_type.html";i:1588325351;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +58,7 @@
         <!-- 搜索栏end -->
 
         <div class="pos">
-            当前位置：<a href="javascript:;">首页</a> > <a href="javascript:;">家用电器</a>  
+            当前位置：<a href="/">首页</a> > <a href="javascript:;">家用电器</a>  
         </div>
 
         <!-- 主题内容start -->

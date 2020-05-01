@@ -1,0 +1,115 @@
+a:hover{
+    text-decoration: none;
+}
+
+
+/* 首页头部 */
+.header{
+    width: 100%;
+    height: 42px;
+    background-color: #333333;
+}
+.header .header-contriner{
+    width: 1226px;
+    height: 100%;
+    margin: auto;
+}
+
+.header .login{
+    float: right;
+    line-height: 42px;
+}
+.header .login .login-item{
+    float: left;
+}
+.header .login .login-item a,.header .login .login-item,.header .login .login-item span{
+    color: #fff;
+}
+
+.header .cart{
+    width: 120px;
+    float: right;
+    color: #fff;
+    line-height: 42px;
+    margin-left: 50px;
+    background-color: #424242;
+    text-align: center;
+    cursor: pointer;
+}
+.header .cart:hover{
+    background-color: #fff;
+    color: orange;
+}
+
+
+/* log层 */
+.log{
+    width: 990px;
+    height: 80px;
+    margin: 10px auto;
+}
+.log>.log-left{
+    width: 280px;
+    height: 100%;
+    float: left;
+    background-color: coral;
+    line-height: 80px;
+    text-indent: 8em;
+}
+.log>.log-right{
+    width: 600px;
+    height: 40px;
+    margin-top: 18px;
+    float: right;
+}
+.log>.log-right>ul>li{
+    width: 200px;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    background-color: #cccaca;
+    border: 1px solid white;
+    text-align: center;
+}
+.log>.log-right>ul>.cart1{
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+/* 购物车列表 */
+.cart-log{
+    border-bottom: 3px solid red;
+}
+.cart-lst{
+    width: 990px;
+    margin: auto;
+    position: relative;
+}
+.shop-info{
+    background-color: silver;
+}
+tr>td{
+    text-align: center;
+}
+
+button{
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+
+/* 底部版权栏 */
+.footer{
+    width: 1226px;
+    height: 200px;
+    text-align: center;
+    background-color: rgb(204, 203, 203);
+    margin: 80px auto;
+    line-height: 200px;
+    font-size: 50px;
+}
+
+
