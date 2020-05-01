@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1575895055;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1588326361;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,9 +24,11 @@
         <!-- 头部start -->
         <div class="header">
             <div class="header-contriner">
-                <div class="cart">
-                    购物车
-                </div>
+                <a href="<?php echo url('index/Cart/lst','',false); ?>" target="_blank">
+                    <div class="cart">
+                        购物车
+                    </div>
+                </a>
                 <div class="login">
                     <div class="login-item">
                         <a href="javascript:;">
@@ -53,7 +55,7 @@
             <div class="search-item">
                 <input type="text" class="search-ipt" placeholder='请输入要搜索的商品'>
                 <div class="search-icon">
-                    <i class="layui-icon layui-icon-search"></i>  
+                    <a href="<?php echo url('index/index/search_type','',false); ?>" target="_blank"><i class="layui-icon layui-icon-search"></i></a>
                 </div>
             </div>
             <div class="search-best">
