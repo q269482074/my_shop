@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1588326361;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1588333368;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2324,7 +2324,7 @@
                         </a>
                     </div>
                 </div>
-        </div>
+            </div>
             <!-- 商品种类楼层end -->
             <hr>
             <!-- 版权区域start -->
