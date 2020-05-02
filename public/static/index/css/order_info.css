@@ -1,7 +1,6 @@
-a:hover{
+/* a:hover{
     text-decoration: none;
-}
-
+} */
 
 /* 首页头部 */
 .header{
@@ -71,10 +70,59 @@ a:hover{
     border: 1px solid white;
     text-align: center;
 }
-.log>.log-right>ul>.cart1{
+.log>.log-right>ul>.cart2{
     background-color: red;
     color: #fff;
     font-weight: bold;
+}
+
+
+
+/* 订单详情 */
+.ord-info{
+    width: 990px;
+    min-height: 200px;
+    border: 1px solid #e7e3e7;
+    border-top: 3px solid #ff6a6a;
+    margin: auto;
+}
+
+.ord-info-heder{
+    width: 100%;
+    height: 40px;
+    background-color: #e0dddd;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 1em;
+}
+
+.ord-info-content{
+    width: 100%;
+    min-height: 100px;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+.ord-info-content>.address{
+    margin-top: 10px;
+    border-bottom: 1px solid #e0dddd;
+}
+.ord-info-content>.address>h3{
+    font-size: 15px;
+    font-weight: bold;
+}
+.ord-info-content>.address>.addr-info{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: #a8a8a8;
+}
+
+.goods-list>h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 
@@ -98,11 +146,6 @@ tr>td{
 .layui-btn-danger {
     background-color: #f0021a;
 }
-button{
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-}
 
 
 /* 底部版权栏 */
@@ -115,5 +158,10 @@ button{
     line-height: 200px;
     font-size: 50px;
 }
+
+
+
+
+
 
 

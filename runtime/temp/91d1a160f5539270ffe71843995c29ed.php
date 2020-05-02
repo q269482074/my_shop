@@ -1,4 +1,4 @@
-<?php /*a:1:{s:72:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\cart\lst.html";i:1588333395;}*/ ?>
+<?php /*a:1:{s:72:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\cart\lst.html";i:1588419535;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,12 +66,12 @@
         </div>
         <table class="table table-bordered">
             <tr class="shop-info">
-                <td>商品名称</td>
-                <td>商品信息</td>
-                <td>单价</td>
-                <td>数量</td>
-                <td>小计</td>
-                <td>操作</td>
+                <td style="width: 45%;">商品名称</td>
+                <td style="width: 15%;">商品信息</td>
+                <td style="width: 10%;">单价</td>
+                <td style="width: 10%;">数量</td> 
+                <td style="width: 10%;">小计</td>
+                <td style="width: 10%;">操作</td>
             </tr>
             <tr>
                 <td>1</td>
@@ -136,7 +136,7 @@
                 </td>
             </tr>
         </table>
-        <button type="button" class="layui-btn layui-btn-danger">结算</button>
+        <a href="<?php echo url('index/order/order_info','',false); ?>"><button type="button" class="layui-btn layui-btn-danger">结算</button></a>
     </div>
 
 
