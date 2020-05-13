@@ -22,4 +22,10 @@ class Index extends Controller
     {
         return $this->fetch();
     }
+
+    //前台商品页面
+    public function goods()
+    {
+        return $this->fetch();
+    }
 }
