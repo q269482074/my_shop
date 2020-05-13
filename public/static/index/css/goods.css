@@ -1,0 +1,304 @@
+a:hover{
+    text-decoration: none;
+}
+
+/* 首页头部 */
+.header{
+    width: 100%;
+    height: 42px;
+    background-color: #333333;
+}
+.header .header-contriner{
+    width: 1226px;
+    height: 100%;
+    margin: auto;
+}
+
+.header .login{
+    float: right;
+    line-height: 42px;
+}
+.header .login .login-item{
+    float: left;
+}
+.header .login .login-item a,.header .login .login-item,.header .login .login-item span{
+    color: #fff;
+}
+.login > .login-item > a:hover{
+    color: orange;
+}
+
+.header .cart{
+    width: 120px;
+    float: right;
+    color: #fff;
+    line-height: 42px;
+    margin-left: 50px;
+    background-color: #424242;
+    text-align: center;
+    cursor: pointer;
+}
+.header .cart:hover{
+    background-color: #fff;
+    color: orange;
+}
+
+
+/* 索引行 */
+.pos{
+    width: 1226px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto;
+    border-bottom: 1px solid #000;
+}
+
+
+
+
+/* 搜索栏 */
+.search{
+    width: 100%;
+    height: 60px;
+}
+.search .search-item{
+    width: 590px;
+    margin: 20px auto;
+}
+.search .search-item .search-ipt{
+    height: 40px;
+    width: 550px;
+    border: 3px solid orange;
+    border-radius: 20px 0 0 20px;
+    text-indent: 2em;
+}
+.search .search-item .search-icon{
+    width: 40px;
+    height: 40px;
+    border: 3px solid orange;
+    float: right;
+    cursor: pointer;
+}
+.search .search-item .search-icon i{
+    font-size: 30px;
+    color: rgb(120, 120, 221);
+}
+.search .search-item .search-icon:hover{
+    background-color: rgb(190, 190, 190);
+}
+.search .search-item .search-icon:hover i{
+    color: #fff;
+}
+
+.search .search-best{
+    width: 1226px;
+    height: 50px;
+    margin: auto;
+    position: relative;
+}
+.search .search-best .search-best-ul{
+    margin-left: 200px;
+}
+.search .search-best .search-best-ul .search-best-item{
+    font-size: 20px;
+    line-height: 50px;
+    float: left;
+    margin-left: 20px;
+}
+.search .search-best .search-best-ul .search-best-item:hover a{
+    color: orange;
+}
+.search-best-content{
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    left: 0;
+    top: 49px;
+    background-color: #fff;
+    z-index: 999;
+    overflow: hidden;
+}
+.search-best-content ul .search-best-info{
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+}
+.search-best-content ul .search-best-info p{
+    text-align: center;
+}
+.search-best-content ul .search-best-info .search-best-info-name{
+    color: black;
+}
+.search-best-content ul .search-best-info:hover .search-best-info-name{
+    color: rgb(85, 79, 79);
+}
+.search-best-content ul .search-best-info .search-best-info-price{
+    color: orange;
+}
+
+
+
+/* 内容 */
+.content{
+    width: 1226px;
+    margin: auto;
+    position: relative;
+}
+
+
+/* 商品属性 */
+.goods{
+    display:inline-block;
+}
+.goods > .goods-attr{
+    width: 1000px;
+    min-height: 524px;
+    /* position: absolute;
+    left: 0; */
+    float: left;
+    border: 1px solid black;
+}
+.goods > .goods-attr > .goods-img-info{
+    margin: 10px;
+    float: left;
+}
+.goods > .goods-attr > .goods-img-info > .goods-img{
+    width: 400px;
+    height: 380px;
+    border: 1px solid red;
+}
+.goods > .goods-attr > .goods-img-info > .goods-img > img{
+    width: 100%;
+    height: 100%;
+}
+.goods > .goods-attr > .goods-img-info > .img-other{
+    width: 400px;
+}
+.goods > .goods-attr > .goods-img-info > .img-other::before,.goods > .goods-attr > .goods-img-info > .img-other::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.goods > .goods-attr > .goods-img-info > .img-other > .img-item{
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+    float: left;
+    border: 1px solid #000;
+}
+.goods > .goods-attr > .goods-img-info > .img-other > .img-item.item{
+    margin-left: 5px;
+}
+.goods > .goods-attr > .goods-img-info > .img-other > .img-item > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 属性栏 */
+.goods > .goods-attr > .goods-info{
+    width: 560px;
+    float: right;
+    margin-right: 10px;
+}
+.goods > .goods-attr > .goods-info > h3{
+    margin-top: 10px;
+}
+.goods > .goods-attr > .goods-info > .price{
+    width: 560px;
+    height: 55px;
+    line-height: 55px;
+    margin-top: 20px;
+    background-color: #fff2e8;
+}
+.goods > .goods-attr > .goods-info > .price > div{
+    float: left;
+    margin-left: 10px;
+}
+.goods-info-title{
+    width: 55px;
+}
+.goods-info-content{
+    width: 485px;
+}
+.goods-info-content.radio{
+    margin-top: 0;
+}
+.goods-info-content.radio > div:nth-of-type(1){
+    margin-left: 0;
+}
+.goods-info-content.radio > div{
+    float: left;
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+.goods-info-content.radio > div:hover{
+    border: 1px solid #f50;
+}
+.goods-info-content.radio > .g-selected{
+    color: #f50;
+    border: 1px solid #f50;
+}
+.goods > .goods-attr > .goods-info > .goods-info-item{
+    margin: 30px 0;
+}
+.goods > .goods-attr > .goods-info > .goods-info-item::before,.goods > .goods-attr > .goods-info > .goods-info-item::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.goods > .goods-attr > .goods-info > .goods-info-item > div{
+    float: left;
+    margin-left: 10px;
+}
+
+
+/* 数量栏 */
+.goods-info-content > .reduce-num,.goods-info-content > .add-num{
+    font-size: 20px;
+    border: 1px solid #cccccc;
+    padding: 0 5px;
+}
+.goods-info-content > .amount{
+    text-align: center;
+    height: 30px;
+}
+
+
+/* 商品商家 */
+.goods > .goods-shop{
+    width: 226px;
+    min-height: 200px;
+    /* position: absolute;
+    right: 0; */
+    float: left;
+    border: 1px solid black;
+}
+.goods > .goods-shop > h3{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.goods > .goods-shop > .tuijian > ul > li{
+    width: 140px;
+    height: 120px;
+    margin: auto;
+}
+.goods > .goods-shop > .tuijian > ul > li > img{
+    width: 140px;
+    height: 100px;
+}
+.goods > .goods-shop > .tuijian > ul > li > div{
+    text-align: center;
+    line-height: 20px;
+    color: #f50;
+    font-weight: bold;
+}
+
+
+
+
+
+
