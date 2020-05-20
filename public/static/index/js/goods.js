@@ -29,4 +29,18 @@ $(function(){
             $(this).val(1);
         }
     });
+
+
+
+    //商品详情，评论选项卡
+    $('.tabbar ul li').click(function(){
+        //点击的第几个标签
+        var li = $(this).index();
+
+        $('.tabbar ul li').removeClass('dl');
+        $('.tabbar ul li').eq(li).addClass('dl');
+        $('.goods-tabbar').hide();
+        $('.goods-tabbar').eq(li).show();
+
+    });
 })
