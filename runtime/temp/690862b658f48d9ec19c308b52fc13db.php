@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html";i:1589984134;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html";i:1589985554;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -244,7 +244,7 @@
                         <li>售后服务</li>
                     </ul>
                 </div>
-                <div class="goods-tabbar goods-detail" style="display: none;">
+                <div class="goods-tabbar goods-detail">
                     <div class="brd-nm">品牌名称：华为/HUAWEI</div>
                     <div class="parameter">产品参数</div>
                     <ul>
@@ -262,7 +262,7 @@
                         <img src="/static/index/images/11.png" alt="">
                     </div>
                 </div>
-                <div class="goods-tabbar goods-comment">
+                <div class="goods-tabbar goods-comment"  style="display: none;">
                     <div class="pf">
                         <div class="pf-left">
                             <div class="pf-tit">与描述相符</div>

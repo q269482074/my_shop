@@ -4,6 +4,16 @@ use think\Controller;
 
 class Goods extends Controller
 {
+    //获取商品的属性，商品添加和修改用
+	public function ajaxGetAttr()
+	{
+		$type_id = input('type_id');
+		$attribute = model('attribute')->where(['type_id'=>$type_id])->select();
+		echo json_encode($attribute);
+    }
+    
+
+
     public function goodsList()
     {
         $data = [
@@ -60,10 +70,12 @@ class Goods extends Controller
         }
         $cat = model('category')->getTree('category');
         $brand = model('brand')->field('id,brand_name')->select();
+        $type = model('type')->select();
 
         $this->assign([
             'cat' => $cat,
             'brand' => $brand,
+            'type' => $type,
         ]);
         return $this->fetch();
     }
