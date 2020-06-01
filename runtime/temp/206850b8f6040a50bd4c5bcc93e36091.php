@@ -1,4 +1,4 @@
-<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\add_goods.html";i:1566202279;}*/ ?>
+<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\add_goods.html";i:1591008185;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/static/admin/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/admin/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/admin/layui/css/layui.css">
     <link rel="stylesheet" href="/static/admin/css/add_goods.css">
     <script src="/static/admin/js/jquery-3.3.1.min.js"></script>
     <script src="/static/admin/js/bootstrap.min.js"></script>
     <script src="/static/admin/layui/layui.js"></script>
     <title>Document</title>
+    <style>
+        #attr_list > li{
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -68,6 +72,32 @@
         </div>
         <div class="content desc" style="display: none;">
             <textarea name="goods_desc" id="goods_desc"></textarea>
+        </div>
+        <div class="content attr" style="display: none;">
+            <div>
+                商品种类：
+                <select name="type_id" id="">
+                    <option value="">请选择</option>
+                    <option value="1">手机</option>
+                    <option value="2">服装</option>
+                </select>
+            </div>
+            <div>
+                <ul id="attr_list" style="padding: 10px;">
+                    <li>
+                        <a href="javascript:;" onclick="newLi(this)">[+]</a>颜色：
+                        <select name="attr_value" id="">
+                            <option value="">请选择</option>
+                            <option value="1">黄色</option>
+                            <option value="2">蓝色</option>
+                        </select>
+                    </li>
+                    <li>
+                        出产日期：
+                        <input type="text" name="attr_value">
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="btn-sub">
             <button type="button" class="btn btn-info submit">确定</button>
@@ -149,6 +179,21 @@ $('.submit').click(function(){
     });
     return false;
 });
+
+
+//点击[+]复制
+function newLi(a)
+{
+    var li = $(a).parent();
+    if($(a).text() == '[+]'){
+        var newli = li.clone();
+        newli.find('a').text('[-]');
+        li.after(newli);
+    }else{
+        li.remove();
+    }
+}
+
 </script>
 
 

@@ -19,7 +19,7 @@
             </div>
             <div class="header-right">
                 <div class="header-right-item user">
-                        <i class="glyphicon glyphicon-user"></i>您好，用户：admin
+                        <i class="glyphicon glyphicon-user"></i>您好，用户：{:session('username')}
                 </div>
                 <div class="header-right-item hide-meun">
                     隐藏菜单
@@ -53,7 +53,7 @@
                             <a href="javascript:;" link="{:url('admin/category/catList','',false)}">分类列表</a>
                         </div>
                         <div class="meun-item">
-                            <a href="javascript:;">类型列表</a>
+                            <a href="javascript:;" link="{:url('admin/type/typeList','',false)}">类型列表</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <div class="bottom-right">
-                <iframe src="main.html" frameborder="0" scrolling="yes"></iframe>
+                <iframe src="./main.html" frameborder="0" scrolling="yes"></iframe>
             </div>
         </div>
     </div>

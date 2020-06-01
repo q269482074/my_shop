@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\index\index.html";i:1566035212;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\index\index.html";i:1591009143;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +20,7 @@
             </div>
             <div class="header-right">
                 <div class="header-right-item user">
-                        <i class="glyphicon glyphicon-user"></i>您好，用户：admin
+                        <i class="glyphicon glyphicon-user"></i>您好，用户：<?php echo session('username'); ?>
                 </div>
                 <div class="header-right-item hide-meun">
                     隐藏菜单
@@ -54,7 +54,7 @@
                             <a href="javascript:;" link="<?php echo url('admin/category/catList','',false); ?>">分类列表</a>
                         </div>
                         <div class="meun-item">
-                            <a href="javascript:;">类型列表</a>
+                            <a href="javascript:;" link="<?php echo url('admin/type/typeList','',false); ?>">类型列表</a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                 </div>
             </div>
             <div class="bottom-right">
-                <iframe src="main.html" frameborder="0" scrolling="yes"></iframe>
+                <iframe src="./main.html" frameborder="0" scrolling="yes"></iframe>
             </div>
         </div>
     </div>
