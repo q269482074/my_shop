@@ -59,6 +59,8 @@ class Goods extends Controller
                 'sort' => input('post.sort'),
                 'desc' => input('post.goods_desc'),
                 'is_sale' => input('post.is_sale') ? input('post.is_sale') : '0',
+                'type_id' 		=> input('post.type_id'),
+				'attr_name' 	=> input('post.attr_value'),
             ];
             $ret = model('goods')->add($data);
             if($ret == 1)
@@ -95,7 +97,10 @@ class Goods extends Controller
                 'sort' => input('post.sort'),
                 'desc' => input('post.goods_desc'),
                 'is_sale' => input('post.is_sale') ? input('post.is_sale') : '0',
+                'type_id' 		=> input('post.type_id'),
+				'attr_value' 	=> input('post.attr_value'),
             ];
+            // dump($data);die;
             $ret = model('goods')->edit($data);
             if($ret == 1)
             {
@@ -105,15 +110,40 @@ class Goods extends Controller
             }
         }
         $id = input('id');
-        $info = db('goods')->where(['id'=>$id])->find();
-        $cat = model('category')->getTree('category');
-        $brand = model('brand')->field('id,brand_name')->select();
+        //品牌数据
+		$brand = model('brand')->field('id,brand_name')->select();
+		//分类数据
+		$cate = model('category')->getTree('category');
+		//商品信息
+		$info = model('goods')->where(['id'=>$id])->find();
+		//商品类型
+		$type = model('type')->select();
+		//商品属性
+		// $attr = model('goodsattr')->where(['goods_id'=>$id])->select();
+		$attr = db('attribute')->alias('a')->join('goodsattr b','b.attr_id=a.id AND b.goods_id='.$id.'','LEFT')->where(['a.type_id'=>$info['type_id']])->select();
+        
         $this->assign([
-            'info' => $info,
-            'brand' => $brand,
-            'cat' => $cat,
+            'attr'			=> $attr,
+			'type'			=> $type,
+			'brand'			=> $brand,
+			'cate'			=> $cate,
+			'info'			=> $info,
         ]);
         return $this->fetch();
+    }
+
+    public function del()
+    {
+        $id = input('post.id');
+        $info = model('goods')->with('goodsattr')->where(['id'=>$id])->find();
+		$ret = $info->together('goodsattr')->delete();
+		if($ret)
+		{
+			$this->success('删除成功!','admin/goods/goodsList');
+		}else
+		{
+			return '删除失败!';
+		}
     }
 
 

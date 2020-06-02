@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html";i:1588330904;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html";i:1591104839;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,7 +92,7 @@
                 <td><?php echo htmlentities($v['sort']); ?></td>
                 <td>
                     <a href="javascript:;" link="<?php echo url('admin/goods/editGoods','',false); ?>/id/<?php echo htmlentities($v['id']); ?>" class="edit">修改</a>
-                    <a href="javascript:;">删除</a>
+                    <a href="javascript:;" delId="<?php echo htmlentities($v['id']); ?>" class="del">删除</a>
                 </td>
             </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -139,6 +139,40 @@ $('.edit').click(function(){
     }); 
 });
  
+//删除
+$('.del').click(function(){
+    var id = $(this).attr('delId');
+    layer.confirm('确定要删除吗?',{icon:3},function(){
+        $.ajax({
+            type:"post",
+            url:"<?php echo url('admin/goods/del'); ?>",
+            data:{id:id},
+            dataType:"json",
+            success:function(data){
+                if(data.code == 1)
+                {
+                    layer.msg(data.msg,{
+                        icon:6,
+                        time:2000,
+                    },function(){
+                        location.href = data.url;
+                    });
+                }else
+                {
+                    layer.open({
+                        title:'系统信息',
+                        content:data.msg,
+                        icon:5,
+                        anim:6,
+                    });
+                }
+            }
+        });
+    })
+    return false;
+});
+
+
 
 //分页
 layui.use(['layer','laydate','laypage'],function(){
