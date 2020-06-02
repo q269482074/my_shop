@@ -11,6 +11,11 @@
     <script src="__STATIC__/admin/js/jquery-3.3.1.min.js"></script>
     <script src="__STATIC__/admin/js/bootstrap.min.js"></script>
     <script src="__STATIC__/admin/layui/layui.js"></script>
+    <style>
+        #attr_list > li{
+            margin: 10px 0;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -26,7 +31,7 @@
                 商品分类：
                 <select name="cate_id" id="cate_id">
                     <option value="">请选择</option>
-                    {volist name="cat" id="v"}
+                    {volist name="cate" id="v"}
                     <option value="{$v.id}" <?php if($v['id'] == $info['cate_id']) echo 'selected="seleced"'; ?>>{:str_repeat('-',$v.level*4)}{$v.cat_name}</option>
                     {/volist}
                 </select>
@@ -68,6 +73,42 @@
         </div>
         <div class="content desc" style="display: none;">
             <textarea name="goods_desc" id="goods_desc">{$info.desc}</textarea>
+        </div>
+        <div class="content attr" style="display: none;">
+            商品种类：
+            <select name="type_id" id="type_id">
+                <option value="">请选择</option>
+                {volist name="type" id="v"}
+                <option {$info.type_id==$v.id ? 'selected="selected"' : ''} value="{$v.id}">{$v.type_name}</option>
+                {/volist}
+            </select>
+            <ul id="attr_list" style="padding: 10px;">
+                <?php $attrId = array(); 
+                    foreach($attr as $k => $v):
+                    if(in_array($v['attr_id'],$attrId))
+                        $opt = '-';
+                    else
+                    {
+                        $attrId[] = $v['attr_id'];
+                        $opt = '+';
+                    }
+                ?>
+                <li>
+                    {if($v.attr_type==2)}
+                        <a href="#" onclick="newLi(this)">[{$opt}]</a>{$v.attr_name}：
+                        <?php $value=explode(',',$v['attr_option_value']) ?>
+                        <select name="attr_value[{$v.attr_id}][]">
+                            <option value="">请选择</option>
+                            {volist name="value" id="v1"}
+                            <option <?php if($v['attr_value']==$v1) echo 'selected="selected"'; ?> value="{$v1}">{$v1}</option>
+                            {/volist}
+                        </select>
+                    {else/}
+                        {$v.attr_name}：<input type="text" name="attr_value[{$v.attr_id}][]" value="{$v.attr_value}">
+                    {/if}
+                </li>
+                <?php endforeach; ?>
+            </ul>
         </div>
         <div class="btn-sub">
             <button type="button" class="btn btn-info submit">确定</button>
@@ -113,6 +154,56 @@ $('.header div').click(function(){
     $(this).addClass('on');
     $('.content').eq(i).show();
 });
+
+
+//点击[+]复制一条li
+function newLi(a){
+   var li = $(a).parent();
+   if($(a).text() == '[+]'){
+       var newli = li.clone();
+       newli.find('a').text('[-]');
+       li.after(newli);
+   }else{
+       li.remove();
+   }
+}
+
+//点击商品种类切换其他属性
+$('select[name=type_id]').change(function(){
+    var type_id = $(this).val();
+    $.ajax({
+        type:"get",
+        url:"{:url('admin/goods/ajaxGetAttr','',false)}/type_id/"+type_id,
+        dataType:"json",
+        success:function(data)
+        {
+            var li = '';
+            $(data).each(function(k,v)
+            {
+                li += '<li>';
+                if(v.attr_type == 2)
+                {
+                    li += '<a href="javascript:;" onclick="newLi(this)">[+]</a>';
+                    li += v.attr_name+'：';
+                    li += '<select name="attr_value['+v.id+'][]">';
+                    //把属性字符串切割成数组
+                    var _attr = v.attr_option_value.split(',');
+                    li += '<option value="">请选择</option>';
+                    for(var i=0; i<_attr.length; i++){
+                        li += '<option value="'+_attr[i]+'">'+_attr[i];
+                        li += '</option>';
+                    }
+                    li += '</select>';
+                }else{
+                    li += v.attr_name+'：'+'<input name="attr_value['+v.id+'][]">';
+                }
+                li += '</li>';
+                $('#attr_list').html(li);
+            });
+        }
+    });
+});
+
 
 
 //修改商品

@@ -80,6 +80,37 @@ class Category extends Model
 		}
 		return $ret;
 	}
+
+
+	/*****************************前台*************************************/
+	//轮播图导航条
+	public function getTowLevel()
+    {
+        $cate = db('category')->select();
+        $arr = [];
+        foreach($cate as $k => $v)
+        {
+        	if($v['parent_id'] == 0)
+        	{
+        		foreach($cate as $k1 => $v1)
+        		{
+        			if($v['id'] == $v1['parent_id'])
+        			{
+        				foreach($cate as $k2 => $v2)
+        				{
+        					if($v1['id'] == $v2['parent_id'])
+        					{
+        						$v1['children'][] = $v2;
+        					}
+        				}
+        				$v['children'][] = $v1;
+        			}
+        		}
+        		$arr[] = $v;
+        	}
+        }
+        return $arr;
+    }
 }
 
 

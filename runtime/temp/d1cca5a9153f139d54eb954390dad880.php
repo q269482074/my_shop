@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\edit_goods.html";i:1566201632;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\edit_goods.html";i:1591100752;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +12,11 @@
     <script src="/static/admin/js/jquery-3.3.1.min.js"></script>
     <script src="/static/admin/js/bootstrap.min.js"></script>
     <script src="/static/admin/layui/layui.js"></script>
+    <style>
+        #attr_list > li{
+            margin: 10px 0;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -27,7 +32,7 @@
                 商品分类：
                 <select name="cate_id" id="cate_id">
                     <option value="">请选择</option>
-                    <?php if(is_array($cat) || $cat instanceof \think\Collection || $cat instanceof \think\Paginator): $i = 0; $__LIST__ = $cat;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                    <?php if(is_array($cate) || $cate instanceof \think\Collection || $cate instanceof \think\Paginator): $i = 0; $__LIST__ = $cate;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
                     <option value="<?php echo htmlentities($v['id']); ?>" <?php if($v['id'] == $info['cate_id']) echo 'selected="seleced"'; ?>><?php echo str_repeat('-',$v['level']*4); ?><?php echo htmlentities($v['cat_name']); ?></option>
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </select>
@@ -69,6 +74,42 @@
         </div>
         <div class="content desc" style="display: none;">
             <textarea name="goods_desc" id="goods_desc"><?php echo htmlentities($info['desc']); ?></textarea>
+        </div>
+        <div class="content attr" style="display: none;">
+            商品种类：
+            <select name="type_id" id="type_id">
+                <option value="">请选择</option>
+                <?php if(is_array($type) || $type instanceof \think\Collection || $type instanceof \think\Paginator): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                <option <?php echo $info['type_id']==$v['id'] ? 'selected="selected"'  :  ''; ?> value="<?php echo htmlentities($v['id']); ?>"><?php echo htmlentities($v['type_name']); ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+            </select>
+            <ul id="attr_list" style="padding: 10px;">
+                <?php $attrId = array(); 
+                    foreach($attr as $k => $v):
+                    if(in_array($v['attr_id'],$attrId))
+                        $opt = '-';
+                    else
+                    {
+                        $attrId[] = $v['attr_id'];
+                        $opt = '+';
+                    }
+                ?>
+                <li>
+                    <?php if(($v['attr_type']==2)): ?>
+                        <a href="#" onclick="newLi(this)">[<?php echo htmlentities($opt); ?>]</a><?php echo htmlentities($v['attr_name']); ?>：
+                        <?php $value=explode(',',$v['attr_option_value']) ?>
+                        <select name="attr_value[<?php echo htmlentities($v['attr_id']); ?>][]">
+                            <option value="">请选择</option>
+                            <?php if(is_array($value) || $value instanceof \think\Collection || $value instanceof \think\Paginator): $i = 0; $__LIST__ = $value;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v1): $mod = ($i % 2 );++$i;?>
+                            <option <?php if($v['attr_value']==$v1) echo 'selected="selected"'; ?> value="<?php echo htmlentities($v1); ?>"><?php echo htmlentities($v1); ?></option>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                        </select>
+                    <?php else: ?>
+                        <?php echo htmlentities($v['attr_name']); ?>：<input type="text" name="attr_value[<?php echo htmlentities($v['attr_id']); ?>][]" value="<?php echo htmlentities($v['attr_value']); ?>">
+                    <?php endif; ?>
+                </li>
+                <?php endforeach; ?>
+            </ul>
         </div>
         <div class="btn-sub">
             <button type="button" class="btn btn-info submit">确定</button>
@@ -114,6 +155,56 @@ $('.header div').click(function(){
     $(this).addClass('on');
     $('.content').eq(i).show();
 });
+
+
+//点击[+]复制一条li
+function newLi(a){
+   var li = $(a).parent();
+   if($(a).text() == '[+]'){
+       var newli = li.clone();
+       newli.find('a').text('[-]');
+       li.after(newli);
+   }else{
+       li.remove();
+   }
+}
+
+//点击商品种类切换其他属性
+$('select[name=type_id]').change(function(){
+    var type_id = $(this).val();
+    $.ajax({
+        type:"get",
+        url:"<?php echo url('admin/goods/ajaxGetAttr','',false); ?>/type_id/"+type_id,
+        dataType:"json",
+        success:function(data)
+        {
+            var li = '';
+            $(data).each(function(k,v)
+            {
+                li += '<li>';
+                if(v.attr_type == 2)
+                {
+                    li += '<a href="javascript:;" onclick="newLi(this)">[+]</a>';
+                    li += v.attr_name+'：';
+                    li += '<select name="attr_value['+v.id+'][]">';
+                    //把属性字符串切割成数组
+                    var _attr = v.attr_option_value.split(',');
+                    li += '<option value="">请选择</option>';
+                    for(var i=0; i<_attr.length; i++){
+                        li += '<option value="'+_attr[i]+'">'+_attr[i];
+                        li += '</option>';
+                    }
+                    li += '</select>';
+                }else{
+                    li += v.attr_name+'：'+'<input name="attr_value['+v.id+'][]">';
+                }
+                li += '</li>';
+                $('#attr_list').html(li);
+            });
+        }
+    });
+});
+
 
 
 //修改商品
