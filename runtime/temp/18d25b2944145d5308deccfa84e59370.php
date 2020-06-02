@@ -1,4 +1,4 @@
-<?php /*a:1:{s:82:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\attribute\add_attr.html";i:1591023150;}*/ ?>
+<?php /*a:1:{s:82:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\attribute\add_attr.html";i:1591069929;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,14 +58,14 @@
 
 //添加商品
 $('.submit').click(function(){
-    if($('#type_name').val().length == 0){
+    if($('#attr_name').val().length == 0){
         alert('名称不能为空');
         return false;
     }
     
     $.ajax({
         type:"post",
-        url:"<?php echo url('admin/type/addType'); ?>",
+        url:"<?php echo url('admin/attribute/addAttr'); ?>",
         data:$('form').serialize(),
         dattaType:"json",
         success:function(data){

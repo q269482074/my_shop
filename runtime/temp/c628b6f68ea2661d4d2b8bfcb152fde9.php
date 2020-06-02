@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1588420193;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1591107783;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -633,59 +633,29 @@
             <button class="next" style="display: none;">next</button>
             <div class="category-list">
                 <ul>
+                    <?php if(is_array($cate) || $cate instanceof \think\Collection || $cate instanceof \think\Paginator): $i = 0; $__LIST__ = $cate;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
                     <li class="category-item">
                         <a href="javascript:;">
-                            手机电话卡<span>></span>
+                            <?php echo htmlentities($v['cate_name']); ?><span>></span>
                         </a>
+                        
                         <div class="category-content">
+                            <?php if((!empty($v['children']))): if(is_array($v['children']) || $v['children'] instanceof \think\Collection || $v['children'] instanceof \think\Paginator): $i = 0; $__LIST__ = $v['children'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v1): $mod = ($i % 2 );++$i;?>
                             <div class="category-content-item">
-                                <a class="category2" href="javascript:;">手机</a>
+                                <a class="category2" href="javascript:;"><?php echo htmlentities($v1['cate_name']); ?></a>
                                 <ul>
-                                    <li class="category3"><a href="javascript:;">IPHONE</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">OPPO</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">三星</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">荣耀</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <?php if((!empty($v1['children']))): if(is_array($v1['children']) || $v1['children'] instanceof \think\Collection || $v1['children'] instanceof \think\Paginator): $i = 0; $__LIST__ = $v1['children'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v2): $mod = ($i % 2 );++$i;?>
+                                    <li class="category3"><a href="javascript:;"><?php echo htmlentities($v2['cate_name']); ?></a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <?php endforeach; endif; else: echo "" ;endif; ?>
+									<?php endif; ?>
                                 </ul>
                             </div>
-
-                            <div class="category-content-item">
-                                <a class="category2" href="javascript:;">手机配件</a>
-                                <ul>
-                                    <li class="category3"><a href="javascript:;">手机套</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">贴膜</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">数据线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">充电器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">耳机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">手机饰品</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">移动电源</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">手机支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-content-item">
-                                <a class="category2" href="javascript:;">数码配件</a>
-                                <ul>
-                                    <li class="category3"><a href="javascript:;">数码相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">单反相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">三脚架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">读卡器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">手柄</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">电池</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                </ul>
-                            </div>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                            <?php endif; ?>
                         </div>
                     </li>
-                    <li class="category-item" >
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                    <!-- <li class="category-item" >
                         <a href="#">
                             电视 盒子<span>></span>
                         </a>
@@ -1152,7 +1122,7 @@
                                 </div>
                             </div>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             

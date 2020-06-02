@@ -57,14 +57,14 @@
 
 //添加商品
 $('.submit').click(function(){
-    if($('#type_name').val().length == 0){
+    if($('#attr_name').val().length == 0){
         alert('名称不能为空');
         return false;
     }
     
     $.ajax({
         type:"post",
-        url:"{:url('admin/type/addType')}",
+        url:"{:url('admin/attribute/addAttr')}",
         data:$('form').serialize(),
         dattaType:"json",
         success:function(data){

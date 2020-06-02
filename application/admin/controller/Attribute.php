@@ -41,7 +41,7 @@ class Attribute extends Controller
 			$ret = model('attribute')->add($data);
 			if($ret == 1)
 			{
-				$this->success('添加成功!','admin/attribute/index?type_id='.$type_id);
+				$this->success('添加成功!','admin/attribute/attrList?type_id='.$type_id);
 			}else
 			{
 				return $this->error($ret);
@@ -53,10 +53,6 @@ class Attribute extends Controller
 		$this->assign([
 			'type_id'		=> $type_id,
 			'type'			=> $type,
-			'button'		=> '属性列表',
-			'list'			=> '属性添加',
-			'controller'	=> 'attribute',
-			'action' 		=> 'index?type_id='.$type_id,
 		]);
 		return $this->fetch();
     }
@@ -83,8 +79,6 @@ class Attribute extends Controller
 				return $this->error($ret);
 			}
         }
-        dump($type_id);
-        dump($id);
 		//获取类型
 		$type = db('type')->select();
 		//获取属性

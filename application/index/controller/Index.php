@@ -8,6 +8,12 @@ class Index extends Controller
     //前台首页
     public function index()
     {
+        $cate = model('category')->getTowLevel();
+
+
+        $this->assign([
+            'cate' => $cate,
+        ]);
         return $this->fetch();
     }
 

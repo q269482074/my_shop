@@ -632,59 +632,31 @@
             <button class="next" style="display: none;">next</button>
             <div class="category-list">
                 <ul>
+                    {volist name="cate" id="v"}
                     <li class="category-item">
                         <a href="javascript:;">
-                            手机电话卡<span>></span>
+                            {$v.cate_name}<span>></span>
                         </a>
+                        
                         <div class="category-content">
+                            {if(!empty($v.children))}
+                            {volist name="v.children" id="v1"}
                             <div class="category-content-item">
-                                <a class="category2" href="javascript:;">手机</a>
+                                <a class="category2" href="javascript:;">{$v1.cate_name}</a>
                                 <ul>
-                                    <li class="category3"><a href="javascript:;">IPHONE</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">OPPO</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">三星</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">荣耀</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">vivo</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">努比亚</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    {if(!empty($v1.children))}
+                                    {volist name="v1.children" id="v2"}
+                                    <li class="category3"><a href="javascript:;">{$v2.cate_name}</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    {/volist}
+									{/if}
                                 </ul>
                             </div>
-
-                            <div class="category-content-item">
-                                <a class="category2" href="javascript:;">手机配件</a>
-                                <ul>
-                                    <li class="category3"><a href="javascript:;">手机套</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">贴膜</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">数据线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">充电器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">耳机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">手机饰品</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">移动电源</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">手机支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-content-item">
-                                <a class="category2" href="javascript:;">数码配件</a>
-                                <ul>
-                                    <li class="category3"><a href="javascript:;">数码相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">单反相机</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">三脚架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">读卡器</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">支架</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">手柄</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    <li class="category3"><a href="javascript:;">电池</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                </ul>
-                            </div>
+                            {/volist}
+                            {/if}
                         </div>
                     </li>
-                    <li class="category-item" >
+                    {/volist}
+                    <!-- <li class="category-item" >
                         <a href="#">
                             电视 盒子<span>></span>
                         </a>
@@ -1151,7 +1123,7 @@
                                 </div>
                             </div>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             

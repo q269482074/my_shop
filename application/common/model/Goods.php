@@ -14,6 +14,11 @@ class Goods extends Model
     {
         return $this->belongsTo('Brand','brand_id','id');
     }
+    //关联商品属性表
+    public function Goodsattr()
+    {
+        return $this->hasMany('goodsattr','goods_id','id');
+    }
     
 
 
@@ -39,6 +44,27 @@ class Goods extends Model
     //修改商品
     public function edit($data)
     {   
+        //商品属性修改
+        $attr = array();
+        if($data['attr_value'])
+        {
+            foreach($data['attr_value'] as $k => $v)
+            {
+                if(empty($v))
+                {
+                    continue;
+                }
+                $v = array_unique($v);
+                foreach($v as $k1 => $v1)
+                {
+                    $attr[] = [
+                        'goods_id' => $data['id'],
+                        'attr_id' => $k,
+                        'attr_value' => $v1,
+                    ];
+                }
+            } 
+        }
         $info = $this->where(['id'=>$data['id']])->find();
         $ret = $info->save([
             'name' => $data['name'],
@@ -49,8 +75,11 @@ class Goods extends Model
             'sort' => $data['sort'],
             'is_sale' => $data['is_sale'],
             'brand_id' => $data['brand_id'],
+            'type_id' => $data['type_id'],
             'cate_id' => $data['cate_id'],
         ]);
+        // 添加新的商品属性
+        model('goodsattr')->saveAll($attr);
         if($ret)
         {
             return 1;
@@ -133,6 +162,68 @@ class Goods extends Model
         }
         $ret = $this->with(['Category','Brand'])->where($where)->order($k,$v)->paginate($page_limit);
         return $ret;
+    }
+
+
+
+    //钩子函数
+	public static function init()
+    {
+    	//添加前
+        self::event('before_insert', function ($user) {
+		         
+        });
+        //添加后
+        self::event('after_insert', function ($user) {
+            $attr = [];
+            if($user['attr_name'])
+            {
+                foreach($user['attr_name'] as $k => $v)
+                {
+                    $v = array_unique($v);
+                    foreach($v as $k1 => $v1)
+                    {
+                        if(empty($v1))
+                        {   
+                            continue;
+                        }
+                        $attr[] = [
+                            'goods_id'  => $user['id'],
+                            'type_id'  => $user['type_id'],
+                            'attr_id'   => $k,
+                            'attr_value' => $v1,
+                        ];
+                    }
+                }
+                model('goodsattr')->add($attr);
+            }
+        });
+        //修改前
+        self::event('before_update', function ($user) {
+                //删除图片
+                $info = model('goods')->where(['id'=>$user['id']])->find();
+                if(!empty($info['img_url']))
+                {
+                    if($info['img_url'] != $user['img_url'])
+                    {
+                        unlink('../public'.$info['img_url']);
+                    }
+                }
+                //商品的属性
+                $attr = model('goodsattr')->where(['goods_id'=>$info['id']])->delete();
+        });
+        //修改后
+        self::event('after_update', function ($user) {
+            // if (1 != $user->status) {
+                
+            // }
+        });
+        //删除前
+        self::event('before_delete', function ($user) {
+            // if (1 != $user->status) {
+                
+            // }
+        });
     }
 
 }

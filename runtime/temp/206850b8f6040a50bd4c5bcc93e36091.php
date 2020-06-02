@@ -1,4 +1,4 @@
-<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\add_goods.html";i:1591008185;}*/ ?>
+<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\add_goods.html";i:1591097290;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,24 +78,25 @@
                 商品种类：
                 <select name="type_id" id="">
                     <option value="">请选择</option>
-                    <option value="1">手机</option>
-                    <option value="2">服装</option>
+                    <?php if(is_array($type) || $type instanceof \think\Collection || $type instanceof \think\Paginator): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                    <option value="<?php echo htmlentities($v['id']); ?>"><?php echo htmlentities($v['type_name']); ?></option>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                 </select>
             </div>
             <div>
                 <ul id="attr_list" style="padding: 10px;">
-                    <li>
+                    <!-- <li>
                         <a href="javascript:;" onclick="newLi(this)">[+]</a>颜色：
                         <select name="attr_value" id="">
                             <option value="">请选择</option>
                             <option value="1">黄色</option>
                             <option value="2">蓝色</option>
                         </select>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         出产日期：
                         <input type="text" name="attr_value">
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -193,6 +194,52 @@ function newLi(a)
         li.remove();
     }
 }
+
+
+//切换商品种类弹出对应的属性
+$('select[name=type_id]').change(function(){
+    var type_id = $(this).val();
+    $.ajax({
+        type:"get",
+        url:"<?php echo url('admin/goods/ajaxGetAttr','',false); ?>/type_id/"+type_id,
+        dataType:"json",
+        success:function(data)
+        {
+            var li = "";
+            $(data).each(function(k,v)
+            {
+                li += "<li>";
+                if(v.attr_type == 2)
+                {
+                    li += '<a href="javascript:;" onclick="newLi(this)">[+]</a>';
+                    li += v.attr_name+'：';
+                }
+                if(v.attr_type == 2)
+                {
+                    //把属性字符串用，来切割成数组
+                    var _attr = v.attr_option_value.split(',');
+                    li += '<select name="attr_value['+v.id+'][]">';
+                    li += '<option value="">请选择</option>';
+                    for(var i=0; i<_attr.length; i++)
+                    {
+                        li += '<option value="'+_attr[i]+'">'+_attr[i];
+                        li += '</option>';
+                    }
+                    li += '</select>'
+                }else
+                {
+                    li += v.attr_name+'：<input name="attr_value['+v.id+'][]">';
+                }
+                li += "</li>";
+            });
+            $('#attr_list').html(li);
+        }
+    });
+});
+
+
+
+
 
 </script>
 
