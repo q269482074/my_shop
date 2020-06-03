@@ -21,13 +21,13 @@
             <select name="parent_id">
                 <option value="0">顶级分类</option>
                 {volist name="cat" id="v"}
-                <option value="{$v.id}" >{:str_repeat('-',$v.level*4)}{$v.cat_name}</option>
+                <option value="{$v.id}" >{:str_repeat('-',$v.level*4)}{$v.cate_name}</option>
                 {/volist}
             </select>
         </div>
         <div>
             分类名称：
-            <input type="text" name="cat_name" id="cat_name">
+            <input type="text" name="cate_name" id="cate_name">
         </div>
         <div class="btn-sub">
             <button type="button" class="btn btn-info submit">确定</button>

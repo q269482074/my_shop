@@ -1,4 +1,4 @@
-<?php /*a:1:{s:81:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\category\cat_list.html";i:1591105853;}*/ ?>
+<?php /*a:1:{s:81:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\category\cat_list.html";i:1591183784;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +26,7 @@
             </tr>
             <?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
             <tr>
-                <td style="text-align: left;"><?php echo str_repeat('-',$v['level']*4); ?><?php echo htmlentities($v['cat_name']); ?></td>
+                <td style="text-align: left;"><?php echo str_repeat('-',$v['level']*4); ?><?php echo htmlentities($v['cate_name']); ?></td>
                 <td>
                     <a href="javascript:;" class="edit" link="<?php echo url('admin/category/editCat','',false); ?>/id/<?php echo htmlentities($v['id']); ?>">修改</a>
                     <a href="javascript:;">删除</a>

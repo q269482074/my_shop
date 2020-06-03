@@ -19,7 +19,7 @@ class Category extends Controller
         if(request()->isAjax())
         {
             $data = [
-                'cat_name' => input('post.cat_name'),
+                'cate_name' => input('post.cate_name'),
                 'parent_id' => input('post.parent_id'),
             ];
             $ret = model('category')->add($data);
@@ -44,7 +44,7 @@ class Category extends Controller
         {
             $data = [
                 'id' => input('post.id'),
-                'cat_name' => input('post.cat_name'),
+                'cate_name' => input('post.cate_name'),
                 'parent_id' => input('post.parent_id')
             ];
             $ret = model('category')->edit($data);
