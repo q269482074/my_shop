@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1591107783;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1591161624;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1306,246 +1306,25 @@
                     <div class="title-line title-line2"></div><div class="title-line title-line1"></div>
                 </div>
                 <div class="floor-goods">
+                    <?php if(is_array($jydq) || $jydq instanceof \think\Collection || $jydq instanceof \think\Paginator): $i = 0; $__LIST__ = $jydq;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
                     <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
+                        <a href="<?php echo url('index/index/goods','',false); ?>/id/<?php echo htmlentities($v['id']); ?>" target="_blank">
+                            <div class="floor-goods-info" title="<?php echo htmlentities($v['name']); ?>">
+                                <img src="<?php echo htmlentities($v['img_url']); ?>" alt="">
+                                <p class="goods-name"><?php echo htmlentities($v['name']); ?></p>
                                 <p class="goods-pj">
                                     <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
                                     <span>收藏：1520</span>
                                 </p>
                                 <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
+                                    <span class="price" style="font-size: 20px; color: orange">￥<?php echo htmlentities($v['goods_price']); ?>&nbsp;</span>
+                                    <!-- <span style="text-decoration:line-through; font-size: 15px;">￥<?php echo htmlentities($v['price']); ?></span> -->
                                     <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>
             </div>
             <div class="floor">
@@ -1555,246 +1334,25 @@
                         <div class="title-line title-line2"></div><div class="title-line title-line1"></div>
                     </div>
                     <div class="floor-goods">
+                        <?php if(is_array($sj) || $sj instanceof \think\Collection || $sj instanceof \think\Paginator): $i = 0; $__LIST__ = $sj;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
                         <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
+                            <a href="<?php echo url('index/index/goods','',false); ?>/id/<?php echo htmlentities($v['id']); ?>" target="_blank">
+                                <div class="floor-goods-info" title="<?php echo htmlentities($v['name']); ?>">
+                                    <img src="<?php echo htmlentities($v['img_url']); ?>" alt="">
+                                    <p class="goods-name"><?php echo htmlentities($v['name']); ?></p>
                                     <p class="goods-pj">
                                         <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
                                         <span>收藏：1520</span>
                                     </p>
                                     <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
+                                        <span class="price" style="font-size: 20px; color: orange">￥<?php echo htmlentities($v['goods_price']); ?>&nbsp;</span>
+                                        <!-- <span style="text-decoration:line-through; font-size: 15px;">￥<?php echo htmlentities($v['price']); ?></span> -->
                                         <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
                                     </p>
                                 </div>
                             </a>
                         </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
                     </div>
             </div>
             <div class="floor">
@@ -1804,246 +1362,25 @@
                         <div class="title-line title-line2"></div><div class="title-line title-line1"></div>
                     </div>
                     <div class="floor-goods">
+                        <?php if(is_array($jj) || $jj instanceof \think\Collection || $jj instanceof \think\Paginator): $i = 0; $__LIST__ = $jj;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
                         <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
+                            <a href="<?php echo url('index/index/goods','',false); ?>/id/<?php echo htmlentities($v['id']); ?>" target="_blank">
+                                <div class="floor-goods-info" title="<?php echo htmlentities($v['name']); ?>">
+                                    <img src="<?php echo htmlentities($v['img_url']); ?>" alt="">
+                                    <p class="goods-name"><?php echo htmlentities($v['name']); ?></p>
                                     <p class="goods-pj">
                                         <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
                                         <span>收藏：1520</span>
                                     </p>
                                     <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
+                                        <span class="price" style="font-size: 20px; color: orange">￥<?php echo htmlentities($v['goods_price']); ?>&nbsp;</span>
+                                        <!-- <span style="text-decoration:line-through; font-size: 15px;">￥<?php echo htmlentities($v['price']); ?></span> -->
                                         <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
                                     </p>
                                 </div>
                             </a>
                         </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="floor-goods-item">
-                            <a href="javascript:;">
-                                <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                    <img src="/static/index/images/112.png" alt="">
-                                    <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                    <p class="goods-pj">
-                                        <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>收藏：1520</span>
-                                    </p>
-                                    <p class="price-xl">
-                                        <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                        <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
                     </div>
             </div>
             <div class="floor">
@@ -2053,246 +1390,25 @@
                     <div class="title-line title-line2"></div><div class="title-line title-line1"></div>
                 </div>
                 <div class="floor-goods">
+                    <?php if(is_array($yf) || $yf instanceof \think\Collection || $yf instanceof \think\Paginator): $i = 0; $__LIST__ = $yf;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
                     <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
+                        <a href="<?php echo url('index/index/goods','',false); ?>/id/<?php echo htmlentities($v['id']); ?>" target="_blank">
+                            <div class="floor-goods-info" title="<?php echo htmlentities($v['name']); ?>">
+                                <img src="<?php echo htmlentities($v['img_url']); ?>" alt="">
+                                <p class="goods-name"><?php echo htmlentities($v['name']); ?></p>
                                 <p class="goods-pj">
                                     <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
                                     <span>收藏：1520</span>
                                 </p>
                                 <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
+                                    <span class="price" style="font-size: 20px; color: orange">￥<?php echo htmlentities($v['goods_price']); ?>&nbsp;</span>
+                                    <!-- <span style="text-decoration:line-through; font-size: 15px;">￥<?php echo htmlentities($v['price']); ?></span> -->
                                     <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="floor-goods-item">
-                        <a href="javascript:;">
-                            <div class="floor-goods-info" title="阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点">
-                                <img src="/static/index/images/112.png" alt="">
-                                <p class="goods-name">阿萨德进口货打架看哈市肯德基哈市坑记得凯撒奖活动卡视角大声点</p>
-                                <p class="goods-pj">
-                                    <span>评价：56</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span>收藏：1520</span>
-                                </p>
-                                <p class="price-xl">
-                                    <span class="price" style="font-size: 20px; color: orange">￥665&nbsp;<span style="text-decoration:line-through; font-size: 15px;">￥755</span></span>
-                                    <span class="xl" style="margin-top: 5px;">月销量1100笔</span>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>
             </div>
             <!-- 商品种类楼层end -->
