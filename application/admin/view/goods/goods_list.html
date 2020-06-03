@@ -23,7 +23,7 @@
                 <select name="cate_id">
                     <option value="0">顶级分类</option>
                     {volist name="cat" id="v"}
-                    <option value="{$v.id}" <?php if($v['id'] == $data['cate_id']) echo 'selected="selected"'; ?></option>{:str_repeat('-',$v.level*4)}{$v.cat_name}</option>
+                    <option value="{$v.id}" <?php if($v['id'] == $data['cate_id']) echo 'selected="selected"'; ?></option>{:str_repeat('-',$v.level*4)}{$v.cate_name}</option>
                     {/volist}
                 </select>
             </div>
@@ -80,7 +80,7 @@
             <tr>
                 <td>{$v.id}</td>
                 <td>{$v.name}</td>
-                <td>{$v.category.cat_name}</td>
+                <td>{$v.category.cate_name}</td>
                 <td>{$v.brand.brand_name}</td>
                 <td>
                     <img src="{$v.img_url}" alt="">

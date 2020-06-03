@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\edit_goods.html";i:1591100752;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\edit_goods.html";i:1591151599;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +33,7 @@
                 <select name="cate_id" id="cate_id">
                     <option value="">请选择</option>
                     <?php if(is_array($cate) || $cate instanceof \think\Collection || $cate instanceof \think\Paginator): $i = 0; $__LIST__ = $cate;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-                    <option value="<?php echo htmlentities($v['id']); ?>" <?php if($v['id'] == $info['cate_id']) echo 'selected="seleced"'; ?>><?php echo str_repeat('-',$v['level']*4); ?><?php echo htmlentities($v['cat_name']); ?></option>
+                    <option value="<?php echo htmlentities($v['id']); ?>" <?php if($v['id'] == $info['cate_id']) echo 'selected="seleced"'; ?>><?php echo str_repeat('-',$v['level']*4); ?><?php echo htmlentities($v['cate_name']); ?></option>
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </select>
             </div>

@@ -27,13 +27,13 @@
                             continue;
                     ?>
                     <?php endif; ?>
-                    <option value="{$v.id}" <?php if($v['id'] == $info['parent_id']) echo 'selected="selected"' ?>>{:str_repeat('-',$v.level*4)}{$v.cat_name}</option>
+                    <option value="{$v.id}" <?php if($v['id'] == $info['parent_id']) echo 'selected="selected"' ?>>{:str_repeat('-',$v.level*4)}{$v.cate_name}</option>
                     {/volist}
             </select>
         </div>
         <div>
             分类名称：
-            <input type="text" name="cat_name" id="cat_name" value="{$info.cat_name}">
+            <input type="text" name="cate_name" id="cate_name" value="{$info.cate_name}">
         </div>
         <div class="btn-sub">
             <button type="button" class="btn btn-info submit">确定</button>

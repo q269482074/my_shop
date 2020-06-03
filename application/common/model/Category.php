@@ -22,7 +22,7 @@ class Category extends Model
     {   
         $info = $this->where(['id'=>$data['id']])->find();
         $ret = $info->save([
-            'cat_name' => $data['cat_name'],
+            'cate_name' => $data['cate_name'],
             'parent_id' => $data['parent_id'],
         ]);
         if($ret)

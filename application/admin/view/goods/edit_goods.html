@@ -32,7 +32,7 @@
                 <select name="cate_id" id="cate_id">
                     <option value="">请选择</option>
                     {volist name="cate" id="v"}
-                    <option value="{$v.id}" <?php if($v['id'] == $info['cate_id']) echo 'selected="seleced"'; ?>>{:str_repeat('-',$v.level*4)}{$v.cat_name}</option>
+                    <option value="{$v.id}" <?php if($v['id'] == $info['cate_id']) echo 'selected="seleced"'; ?>>{:str_repeat('-',$v.level*4)}{$v.cate_name}</option>
                     {/volist}
                 </select>
             </div>

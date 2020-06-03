@@ -1,4 +1,4 @@
-<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html";i:1591104839;}*/ ?>
+<?php /*a:1:{s:80:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html";i:1591151253;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +24,7 @@
                 <select name="cate_id">
                     <option value="0">顶级分类</option>
                     <?php if(is_array($cat) || $cat instanceof \think\Collection || $cat instanceof \think\Paginator): $i = 0; $__LIST__ = $cat;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-                    <option value="<?php echo htmlentities($v['id']); ?>" <?php if($v['id'] == $data['cate_id']) echo 'selected="selected"'; ?></option><?php echo str_repeat('-',$v['level']*4); ?><?php echo htmlentities($v['cat_name']); ?></option>
+                    <option value="<?php echo htmlentities($v['id']); ?>" <?php if($v['id'] == $data['cate_id']) echo 'selected="selected"'; ?></option><?php echo str_repeat('-',$v['level']*4); ?><?php echo htmlentities($v['cate_name']); ?></option>
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </select>
             </div>
@@ -81,7 +81,7 @@
             <tr>
                 <td><?php echo htmlentities($v['id']); ?></td>
                 <td><?php echo htmlentities($v['name']); ?></td>
-                <td><?php echo htmlentities($v['category']['cat_name']); ?></td>
+                <td><?php echo htmlentities($v['category']['cate_name']); ?></td>
                 <td><?php echo htmlentities($v['brand']['brand_name']); ?></td>
                 <td>
                     <img src="<?php echo htmlentities($v['img_url']); ?>" alt="">
