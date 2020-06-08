@@ -40,6 +40,26 @@ class Index extends Controller
     //前台商品页面
     public function goods()
     {
+        $id = input('id');
+
+        
+        //取出商品的属性
+        $attrs = [];
+        $attr = [];
+        $attrData = db('goodsattr')->alias('a')->field('a.attr_value,a.id,a.attr_id,b.attr_name,b.attr_type')->join('attribute b','b.id=a.attr_id','left')->where(['goods_id'=>$id])->select();
+        foreach($attrData as $k => $v)
+        {
+            if($v['attr_type'] == 2)
+                $attrs[$v['attr_name']][] = $v;
+            else
+                $attr[$v['attr_name']] = $v;
+        }
+        $goods = db('goods')->where(['id'=>$id])->find();
+        $this->assign([
+            'attrs' => $attrs,
+            'attr' => $attr,
+            'goods' => $goods,
+        ]);
         return $this->fetch();
     }
 }

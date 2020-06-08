@@ -202,10 +202,10 @@ $('select[name=type_id]').change(function(){
         type:"get",
         url:"{:url('admin/goods/ajaxGetAttr','',false)}/type_id/"+type_id,
         dataType:"json",
-        success:function(data)
+        success:(data)=>
         {
             var li = "";
-            $(data).each(function(k,v)
+            $(data).each((k,v)=>
             {
                 li += "<li>";
                 if(v.attr_type == 2)

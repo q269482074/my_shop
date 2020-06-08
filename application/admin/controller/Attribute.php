@@ -35,7 +35,7 @@ class Attribute extends Controller
 			$data = [
 				'attr_name'		=> input('post.attr_name'),
 				'attr_type'		=> input('post.attr_type'),
-				'attr_option_value'		=> trim(str_replace('，',',',input('post.attr_option_value')),','),
+				'attr_option_value'		=> trim(str_replace('，',',',input('post.attr_option_value'))),
 				'type_id'		=> input('post.type_id'),
 			];
 			$ret = model('attribute')->add($data);

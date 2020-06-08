@@ -217,10 +217,10 @@ a:hover{
     margin-left: 10px;
 }
 .goods-info-title{
-    width: 55px;
+    width: 60px;
 }
 .goods-info-content{
-    width: 485px;
+    width: 480px;
 }
 .goods-info-content.radio{
     margin-top: 0;
@@ -242,15 +242,15 @@ a:hover{
     color: #f50;
     border: 1px solid #f50;
 }
-.goods > .goods-attr > .goods-info > .goods-info-item{
+.goods > .goods-attr > .goods-info > .shop-attr > .goods-info-item{
     margin: 30px 0;
 }
-.goods > .goods-attr > .goods-info > .goods-info-item::before,.goods > .goods-attr > .goods-info > .goods-info-item::after{
+.goods > .goods-attr > .goods-info > .shop-attr > .goods-info-item::before,.goods > .goods-attr > .goods-info > .shop-attr > .goods-info-item::after{
     content:"";
     clear: both;
     display: block;
 }
-.goods > .goods-attr > .goods-info > .goods-info-item > div{
+.goods > .goods-attr > .goods-info > .shop-attr > .goods-info-item > div{
     float: left;
     margin-left: 10px;
 }
