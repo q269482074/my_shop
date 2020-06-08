@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html";i:1589985554;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html";i:1591626434;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,11 +58,11 @@
 
     <div class="pos">
         当前位置：
-        <a href="javascript:;">首页</a>
+        <a href="/">首页</a>
         >
         <a href="javascript:;">家庭电器</a>
         >
-        电视机
+        <?php echo htmlentities($goods['name']); ?>
     </div>
 
     <!-- 内容start -->
@@ -87,7 +87,7 @@
                             <ul class="clearfix animation03">
                                 <li>
                                     <div class="small-img">
-                                        <img src="/static/index/images/22.jpg" />
+                                        <img src="<?php echo htmlentities($goods['img_url']); ?>" />
                                     </div>
                                 </li>
                                 <li>
@@ -118,43 +118,47 @@
                     <!--经过放大的图片显示容器-->
                 </div>
                 <div class="goods-info">
-                    <h3>【Hpoi现货】花椰菜 七海 微笑 1/7 手办</h3>
+                    <h3 class="goods-name"><?php echo htmlentities($goods['name']); ?></h3>
                     <div class="price">
                         <div class="goods-info-title">价格</div>
                         <div class="goods-info-content" style="font-size: 30px; color: #ff4400;">
-                            ¥ 780
+                            ¥ <span class=" goods-price"><?php echo htmlentities($goods['goods_price']); ?></span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            原价   <s>¥ <?php echo htmlentities($goods['price']); ?></s>
                         </div>
                     </div>
-                    <div class="addr goods-info-item">
-                        <div class="goods-info-title">配送</div>
-                        <div class="goods-info-content">
-                            广东广州 至 广东深圳
+                    <form class="shop-attr">
+                        <input type="hidden" name="goods_id" value="<?php echo htmlentities($goods['id']); ?>">
+                        <div class="addr goods-info-item">
+                            <div class="goods-info-title">配送</div>
+                            <div class="goods-info-content">
+                                广东广州 至 广东深圳
+                            </div>
                         </div>
-                    </div>
-                    <div class="attr goods-info-item">
-                        <div class="goods-info-title">码数</div>
-                        <div class="goods-info-content radio">
-                            <div>38</div><div>39</div><div>40</div><div>41</div><div>42</div><div>43</div><div>44</div>
+                        <?php foreach($attrs as $k => $v): ?>
+                        <div class="attr goods-info-item">
+                            <div class="goods-info-title goods-attr-name"><?php echo htmlentities($k); ?></div>
+                            <div class="goods-info-content radio">
+                                <?php foreach($v as $k1 => $v1): ?>
+                                <div class="selected"><input type="radio" style="display: none;" name="attr_valuie_id[<?php echo htmlentities($v1['attr_id']); ?>]" value="<?php echo htmlentities($v1['id']); ?>"><?php echo htmlentities($v1['attr_value']); ?></div>
+                                <?php endforeach; ?>
+                                <!-- <div>38</div><div>39</div><div>40</div><div>41</div><div>42</div><div>43</div><div>44</div> -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="attr goods-info-item">
-                        <div class="goods-info-title">颜色</div>
-                        <div class="goods-info-content radio">
-                            <div>红色</div><div>白色</div><div>蓝色</div><div>黑色</div>
+                        <?php endforeach; ?>
+                        <div class="attr goods-info-item">
+                            <div class="goods-info-title">数量</div>
+                            <div class="goods-info-content">
+                                <a href="javascript:;" class="reduce-num">-</a>
+                                <input type="text" class="amount" name="amount" value="1" size="1">
+                                <a href="javascript:;" class="add-num">+</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="attr goods-info-item">
-                        <div class="goods-info-title">数量</div>
-                        <div class="goods-info-content">
-                            <a href="javascript:;" class="reduce-num">-</a>
-                            <input type="text" class="amount" name="amount" value="1" size="1">
-                            <a href="javascript:;" class="add-num">+</a>
+                        <div class="attr goods-info-item">
+                            <div class="layui-btn layui-btn-warm">直接购买</div>
+                            <div class="layui-btn layui-btn-danger gm">加入购物车</div>
                         </div>
-                    </div>
-                    <div class="attr goods-info-item">
-                        <div class="layui-btn layui-btn-warm">直接购买</div>
-                        <div class="layui-btn layui-btn-danger">加入购物车</div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="goods-shop">
@@ -416,6 +420,9 @@
         readonly: true,
       });
     });
+    layui.use(['layer'],function(){
+        layer = layui.layer;
+    });
 </script>
 
 <script type="text/javascript">
@@ -439,5 +446,41 @@ $(function() {
         //重新载入主图,根据magnifier函数的index属性
         _magnifier.eqImg();
     */
+});
+
+//属性radio
+// $('.selected').click(function(){
+//     $(this).find('input[name=attr_valuie_id]').prop('checked','checked'); 
+// });
+
+
+//加入购物车
+$('.gm').click(function(){
+    var form = $('.shop-attr');
+    var formData = form.serialize();
+    $.ajax({
+        type:"post",
+        url:"<?php echo url('index/cart/add'); ?>",
+        data:formData,
+        dataType:'json',
+        success:function(data){
+            if(data.code == 1){
+                layer.msg(data.msg,{
+                    icon:6,
+                    time:2000,
+                },function(){
+                    location.href = data.url;
+                });
+            }else{
+                layer.open({
+                    title:'系统信息',
+                    content:data.msg,
+                    icon:5,
+                    anim:6,
+                });
+            }
+        }
+    });
+    return false;
 });
 </script>

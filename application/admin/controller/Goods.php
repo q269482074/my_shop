@@ -121,7 +121,6 @@ class Goods extends Controller
 		//商品属性
 		// $attr = model('goodsattr')->where(['goods_id'=>$id])->select();
 		$attr = db('attribute')->alias('a')->join('goodsattr b','b.attr_id=a.id AND b.goods_id='.$id.'','LEFT')->where(['a.type_id'=>$info['type_id']])->select();
-        
         $this->assign([
             'attr'			=> $attr,
 			'type'			=> $type,

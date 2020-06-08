@@ -1,4 +1,4 @@
-<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\add_goods.html";i:1591151583;}*/ ?>
+<?php /*a:1:{s:79:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\add_goods.html";i:1591584793;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -203,10 +203,10 @@ $('select[name=type_id]').change(function(){
         type:"get",
         url:"<?php echo url('admin/goods/ajaxGetAttr','',false); ?>/type_id/"+type_id,
         dataType:"json",
-        success:function(data)
+        success:(data)=>
         {
             var li = "";
-            $(data).each(function(k,v)
+            $(data).each((k,v)=>
             {
                 li += "<li>";
                 if(v.attr_type == 2)

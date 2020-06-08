@@ -2,6 +2,7 @@ $(function(){
     //商品属性框
     $('.goods-info-content.radio > div').click(function(){
         $(this).addClass("g-selected").siblings().removeClass("g-selected");
+        $(this).find("input").prop({checked:"checked"});
 		//去除虚边框
 		$(this).blur();
     });
