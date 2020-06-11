@@ -1,4 +1,4 @@
-<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1591161624;}*/ ?>
+<?php /*a:1:{s:75:"E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\index.html";i:1591857405;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,18 +30,31 @@
                     </div>
                 </a>
                 <div class="login">
+                    <?php if((session('memberId'))): ?>
                     <div class="login-item">
-                        <a href="javascript:;">
+                            您好，尊敬的用户： <span style="color: red; font-weight:bold;">admin1</span>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                    </div>
+                    <div class="login-item">
+                        <a href="javascript:;" target="_blank" class="logout">
+                            退出
+                        </a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                    </div>
+                    <?php else: ?>
+                    <div class="login-item">
+                        <a href="<?php echo url('index/member/login'); ?>" target="_blank">
                             登录
                         </a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                     </div>
                     <div class="login-item">
-                        <a href="javascript:;">
+                        <a href="<?php echo url('index/member/regist'); ?>" target="_blank">
                             注册
                         </a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                     </div>
+                    <?php endif; ?>
                     <div class="login-item">
                         <a href="javascript:;">消息通知</a>
                     </div>
@@ -1430,6 +1443,9 @@
 
 
 <script type='text/javascript'>
+layui.use(['layer'],function(){
+	layer = layui.layer;
+});
 
 // 倒计时
 var o=document.getElementById('countdown');
@@ -1473,6 +1489,37 @@ var mySwiper = new Swiper('.swiper-container',{
     },
 })
 $('.swiper-slide').css('width','235px');
+
+
+//用户退出
+$('.logout').click(function(){
+	$.ajax({
+		type:"post",
+		url:"<?php echo url('index/member/logout'); ?>",
+		dataType:"json",
+		success:function(data)
+		{
+			if(data.code == 1)
+			{
+				layer.msg(data.msg,{
+					icon:6,
+					time:2000,
+				},function(){
+					location.href = data.url;
+				});
+			}else
+			{
+				layer.open({
+					title:'系统消息',
+					content:data.msg,
+					icon:5,
+					anim:6,
+				});
+			}
+		}
+	});
+	return false;
+});
 </script>
 
 

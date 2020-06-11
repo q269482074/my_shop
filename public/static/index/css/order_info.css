@@ -51,9 +51,7 @@
     width: 280px;
     height: 100%;
     float: left;
-    background-color: coral;
     line-height: 80px;
-    text-indent: 8em;
 }
 .log>.log-right{
     width: 600px;

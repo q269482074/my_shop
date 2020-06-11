@@ -1,0 +1,88 @@
+.header{
+    width: 1226px;
+    height: 100px;
+    margin: auto;
+}
+.header > .logo{
+    line-height: 100px;
+    margin-left: -25px;
+}
+
+
+
+.content{
+    background-color: orange;
+    width: 100%;
+    height: 600px;
+}
+
+.content > .con-item{
+    position: relative;
+    width: 1226px;
+    height: 100%;
+    margin: auto;
+}
+
+
+.content >.con-item > .mclogo{
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
+
+.content >.con-item > .login{
+    width: 250px;
+    height: 230px;
+    background-color: #fff;
+    position: absolute;
+    top: 195px;
+    right: 160px;
+}
+
+.content >.con-item > .login > .login-item{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.content >.con-item > .login > .login-item > h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content >.con-item > .login > .login-item > form > .field{
+    text-align: center;
+    margin: 20px 0;
+}
+.content >.con-item > .login > .login-item > form > .field > i{
+    font-size: 20px;
+    vertical-align: middle;
+}
+.content >.con-item > .login > .login-item > form > .field > input{
+    font-size: 16px;
+    width: 80%;
+}
+
+
+
+.content >.con-item > .login > .login-item > .reg-feild{
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+
+
+.footer{
+    width: 1226px;
+    height: 200px;
+    text-align: center;
+    background-color: #fff;
+    margin: auto;
+    line-height: 200px;
+    font-size: 50px;
+}
+
+
+
+
