@@ -11942,3 +11942,508 @@
 )
 [ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\cart\lst.html [ array (
 ) ]
+---------------------------------------------------------------
+
+[2020-06-08T23:04:57+08:00] 127.0.0.1 GET www.myshop.com/index/index/goods/id/6
+[运行时间：0.067004s] [吞吐率：14.92req/s] [内存消耗：2,437.05kb] [文件加载：71]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/goods/id/6' => '',
+  'id' => '6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html [ array (
+  0 => 'attrs',
+  1 => 'attr',
+  2 => 'goods',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goodsattr` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `a`.`attr_value`,`a`.`id`,`a`.`attr_id`,`b`.`attr_name`,`b`.`attr_type` FROM `tp_goodsattr` `a` LEFT JOIN `tp_attribute` `b` ON `b`.`id`=`a`.`attr_id` WHERE  `goods_id` = '6' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:05:18+08:00] 127.0.0.1 GET www.myshop.com/index/index/goods/id/12
+[运行时间：0.057003s] [吞吐率：17.54req/s] [内存消耗：2,440.34kb] [文件加载：71]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/goods/id/12' => '',
+  'id' => '12',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html [ array (
+  0 => 'attrs',
+  1 => 'attr',
+  2 => 'goods',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goodsattr` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `a`.`attr_value`,`a`.`id`,`a`.`attr_id`,`b`.`attr_name`,`b`.`attr_type` FROM `tp_goodsattr` `a` LEFT JOIN `tp_attribute` `b` ON `b`.`id`=`a`.`attr_id` WHERE  `goods_id` = '12' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:05:40+08:00] 127.0.0.1 GET www.myshop.com/index/index/goods/id/2
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：2,438.07kb] [文件加载：71]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/goods/id/2' => '',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html [ array (
+  0 => 'attrs',
+  1 => 'attr',
+  2 => 'goods',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goodsattr` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `a`.`attr_value`,`a`.`id`,`a`.`attr_id`,`b`.`attr_name`,`b`.`attr_type` FROM `tp_goodsattr` `a` LEFT JOIN `tp_attribute` `b` ON `b`.`id`=`a`.`attr_id` WHERE  `goods_id` = '2' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:05:49+08:00] 127.0.0.1 GET www.myshop.com/index/index/goods/id/4
+[运行时间：0.053003s] [吞吐率：18.87req/s] [内存消耗：2,437.57kb] [文件加载：71]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/goods/id/4' => '',
+  'id' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html [ array (
+  0 => 'attrs',
+  1 => 'attr',
+  2 => 'goods',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goodsattr` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `a`.`attr_value`,`a`.`id`,`a`.`attr_id`,`b`.`attr_name`,`b`.`attr_type` FROM `tp_goodsattr` `a` LEFT JOIN `tp_attribute` `b` ON `b`.`id`=`a`.`attr_id` WHERE  `goods_id` = '4' [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:05:51+08:00] 127.0.0.1 GET www.myshop.com/index/index/goods/id/8
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：2,436.27kb] [文件加载：71]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/goods/id/8' => '',
+  'id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html [ array (
+  0 => 'attrs',
+  1 => 'attr',
+  2 => 'goods',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goodsattr` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `a`.`attr_value`,`a`.`id`,`a`.`attr_id`,`b`.`attr_name`,`b`.`attr_type` FROM `tp_goodsattr` `a` LEFT JOIN `tp_attribute` `b` ON `b`.`id`=`a`.`attr_id` WHERE  `goods_id` = '8' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:05:52+08:00] 127.0.0.1 GET www.myshop.com/index/index/goods/id/6
+[运行时间：0.053003s] [吞吐率：18.87req/s] [内存消耗：2,437.05kb] [文件加载：71]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/goods/id/6' => '',
+  'id' => '6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html [ array (
+  0 => 'attrs',
+  1 => 'attr',
+  2 => 'goods',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goodsattr` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `a`.`attr_value`,`a`.`id`,`a`.`attr_id`,`b`.`attr_name`,`b`.`attr_type` FROM `tp_goodsattr` `a` LEFT JOIN `tp_attribute` `b` ON `b`.`id`=`a`.`attr_id` WHERE  `goods_id` = '6' [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:05:55+08:00] 127.0.0.1 GET www.myshop.com/index/index/goods/id/9
+[运行时间：0.056004s] [吞吐率：17.86req/s] [内存消耗：2,439.26kb] [文件加载：71]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/goods/id/9' => '',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html [ array (
+  0 => 'attrs',
+  1 => 'attr',
+  2 => 'goods',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goodsattr` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `a`.`attr_value`,`a`.`id`,`a`.`attr_id`,`b`.`attr_name`,`b`.`attr_type` FROM `tp_goodsattr` `a` LEFT JOIN `tp_attribute` `b` ON `b`.`id`=`a`.`attr_id` WHERE  `goods_id` = '9' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:05:57+08:00] 127.0.0.1 GET www.myshop.com/index/index/goods/id/5
+[运行时间：0.057003s] [吞吐率：17.54req/s] [内存消耗：2,434.89kb] [文件加载：71]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/goods/id/5' => '',
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html [ array (
+  0 => 'attrs',
+  1 => 'attr',
+  2 => 'goods',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goodsattr` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `a`.`attr_value`,`a`.`id`,`a`.`attr_id`,`b`.`attr_name`,`b`.`attr_type` FROM `tp_goodsattr` `a` LEFT JOIN `tp_attribute` `b` ON `b`.`id`=`a`.`attr_id` WHERE  `goods_id` = '5' [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:05:59+08:00] 127.0.0.1 GET www.myshop.com/index/index/goods/id/10
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：2,438.05kb] [文件加载：71]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/goods/id/10' => '',
+  'id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\index\view\index\goods.html [ array (
+  0 => 'attrs',
+  1 => 'attr',
+  2 => 'goods',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goodsattr` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `a`.`attr_value`,`a`.`id`,`a`.`attr_id`,`b`.`attr_name`,`b`.`attr_type` FROM `tp_goodsattr` `a` LEFT JOIN `tp_attribute` `b` ON `b`.`id`=`a`.`attr_id` WHERE  `goods_id` = '10' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:06:25+08:00] 127.0.0.1 GET www.myshop.com/admin/login/index
+[运行时间：0.081005s] [吞吐率：12.34req/s] [内存消耗：1,443.77kb] [文件加载：62]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index' => '',
+)
+---------------------------------------------------------------
+
+[2020-06-08T23:06:25+08:00] 127.0.0.1 GET www.myshop.com/admin/index/index
+[运行时间：0.025002s] [吞吐率：40.00req/s] [内存消耗：1,532.14kb] [文件加载：68]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index' => '',
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-06-08T23:06:25+08:00] 127.0.0.1 GET www.myshop.com/admin/index/main.html
+[运行时间：0.043003s] [吞吐率：23.25req/s] [内存消耗：1,478.49kb] [文件加载：66]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/main_html' => '',
+)
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\index\main.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-06-08T23:06:27+08:00] 127.0.0.1 GET www.myshop.com/admin/goods/goodslist
+[运行时间：0.082005s] [吞吐率：12.19req/s] [内存消耗：2,844.55kb] [文件加载：87]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goodslist' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\goods\goods_list.html [ array (
+  0 => 'goods',
+  1 => 'page_limit',
+  2 => 'page',
+  3 => 'count',
+  4 => 'cat',
+  5 => 'data',
+  6 => 'brand',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_goods` WHERE  `is_sale` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` WHERE  `is_sale` = 0 ORDER BY `id` DESC LIMIT 0,5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` WHERE  `id` = 8 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_brand` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_brand` WHERE  `id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`brand_name` FROM `tp_brand` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:06:29+08:00] 127.0.0.1 GET www.myshop.com/admin/category/catlist
+[运行时间：0.060003s] [吞吐率：16.67req/s] [内存消耗：2,652.23kb] [文件加载：80]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/category/catlist' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\category\cat_list.html [ array (
+  0 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:06:30+08:00] 127.0.0.1 GET www.myshop.com/admin/type/typelist
+[运行时间：0.051002s] [吞吐率：19.61req/s] [内存消耗：2,611.10kb] [文件加载：80]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/type/typelist' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\type\type_list.html [ array (
+  0 => 'type',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_type` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_type` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-08T23:06:32+08:00] 127.0.0.1 GET www.myshop.com/admin/category/catlist
+[运行时间：0.059003s] [吞吐率：16.95req/s] [内存消耗：2,652.23kb] [文件加载：80]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\my_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=oi5ep9nfakngv68rr066hj9pa3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myshop.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/category/catlist' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\my_shop\application\admin\view\category\cat_list.html [ array (
+  0 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=myshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.001000s ]

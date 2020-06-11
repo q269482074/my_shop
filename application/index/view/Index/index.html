@@ -29,18 +29,31 @@
                     </div>
                 </a>
                 <div class="login">
+                    {if(session('memberId'))}
                     <div class="login-item">
-                        <a href="javascript:;">
+                            您好，尊敬的用户： <span style="color: red; font-weight:bold;">admin1</span>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                    </div>
+                    <div class="login-item">
+                        <a href="javascript:;" target="_blank" class="logout">
+                            退出
+                        </a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                    </div>
+                    {else/}
+                    <div class="login-item">
+                        <a href="{:url('index/member/login')}" target="_blank">
                             登录
                         </a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                     </div>
                     <div class="login-item">
-                        <a href="javascript:;">
+                        <a href="{:url('index/member/regist')}" target="_blank">
                             注册
                         </a>
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                     </div>
+                    {/if}
                     <div class="login-item">
                         <a href="javascript:;">消息通知</a>
                     </div>
@@ -1431,6 +1444,9 @@
 
 
 <script type='text/javascript'>
+layui.use(['layer'],function(){
+	layer = layui.layer;
+});
 
 // 倒计时
 var o=document.getElementById('countdown');
@@ -1474,6 +1490,37 @@ var mySwiper = new Swiper('.swiper-container',{
     },
 })
 $('.swiper-slide').css('width','235px');
+
+
+//用户退出
+$('.logout').click(function(){
+	$.ajax({
+		type:"post",
+		url:"{:url('index/member/logout')}",
+		dataType:"json",
+		success:function(data)
+		{
+			if(data.code == 1)
+			{
+				layer.msg(data.msg,{
+					icon:6,
+					time:2000,
+				},function(){
+					location.href = data.url;
+				});
+			}else
+			{
+				layer.open({
+					title:'系统消息',
+					content:data.msg,
+					icon:5,
+					anim:6,
+				});
+			}
+		}
+	});
+	return false;
+});
 </script>
 
 

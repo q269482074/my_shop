@@ -23,18 +23,31 @@
                 </div>
             </a>
             <div class="login">
+                {if(session('memberId'))}
                 <div class="login-item">
-                    <a href="javascript:;">
+                        您好，尊敬的用户： <span style="color: red; font-weight:bold;">admin1</span>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                </div>
+                <div class="login-item">
+                    <a href="javascript:;" target="_blank" class="logout">
+                        退出
+                    </a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                </div>
+                {else/}
+                <div class="login-item">
+                    <a href="{:url('index/member/login')}" target="_blank">
                         登录
                     </a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
                 </div>
                 <div class="login-item">
-                    <a href="javascript:;">
+                    <a href="{:url('index/member/regist')}" target="_blank">
                         注册
                     </a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
                 </div>
+                {/if}
                 <div class="login-item">
                     <a href="javascript:;">消息通知</a>
                 </div>
@@ -46,7 +59,7 @@
     <!-- log层start -->
     <div class="log">
         <div class="log-left">
-            商城LOG
+            <a href="/"><img src="__STATIC__/index/images/loginlogo.png" alt=""></a>
         </div>
         <div class="log-right">
             <ul>
@@ -72,66 +85,44 @@
                 <td style="width: 10%;">小计</td>
                 <td style="width: 10%;">操作</td>
             </tr>
+            <?php $price = 0; ?>
+			{volist name="goods" id="v"}
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
+                <td>
+                    <div style="float: left;">
+                        <a href="{:url('index/index/goods','',false)}/id/{$v.goods_id}" target="_blank">
+                            <img src="{$v.img_url.img_url}" alt="" style="width:80px;height:80px;">
+                        </a>
+                    </div>
+                    <div style="word-wrap: break-word; word-break: break-all; overflow: hidden; margin-top: 15px; margin-left: 100px;">
+                        <a href="{:url('index/index/goods','',false)}/id/{$v.goods_id}" target="_blank">
+                            {$v.name.name}
+                        </a>
+                    </div>
+                </td>
+                <td style="vertical-align: middle;">
+                    {volist name="v.attr_value_id" id="v1"}
+                    <p>{$v1.attr_name}：{$v1.attr_value}</p>
+                    {/volist}
+                </td>
+                <td style="vertical-align: middle;">
+                    ￥<span>{$v.goods_price.goods_price}</span>
+                </td>
+                <td style="vertical-align: middle;">
+                    {$v.goods_number}
+                </td>
+                <td style="vertical-align: middle;">
+                    ￥<span><?php $xj = $v['goods_price']['goods_price']*$v['goods_number']; $price+=$xj; echo $xj; ?></span>
+                </td>
+                <td style="vertical-align: middle;">
+                    <a <?php if(isset($v['id'])) echo 'delId='.$v['id']; ?> class="del" href="javascript:void(0)">删除</a>
+                </td>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
+            {/volist}
             <tr class="shop-info">
                 <td colspan="6" style="text-align: right;">
                     购物金额总计： 
-                    <strong> <span style="color:red;">￥87664</span></strong>
+                    <strong> <span style="color:red;">￥{$price}</span></strong>
                 </td>
             </tr>
         </table>
@@ -149,3 +140,30 @@
 
 </body>
 </html>
+
+
+
+<script>
+layui.use(['layer'],function(){
+    layer = layui.layer;
+});
+
+//删除
+$('.del').click(function(){
+    var id = $(this).attr('delId');
+    if(confirm('确定要删除吗?'))
+    {
+        $.ajax({
+            type:"get",
+            url:"{:url('index/cart/del','',false)}"+'/id/'+id,
+            dataType:"json",
+            success:function(data)
+            {
+                location.href = data.url;
+            }
+        });
+        $(this).parent().parent().remove();
+    }
+    return false;
+});
+</script>
