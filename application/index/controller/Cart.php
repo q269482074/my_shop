@@ -7,6 +7,16 @@ class Cart extends Controller
     //购物车列表
     public function lst()
     {
+		if(!session('memberId'))
+		{
+			header('Location:/index/member/login');
+			exit;
+		}
+
+		$goods = model('cart')->cartLst();
+		$this->assign([
+			'goods' => $goods,
+		]);
         return $this->fetch();
     }
 
@@ -30,7 +40,17 @@ class Cart extends Controller
 				return $this->error($ret);
 			}
 		}
-    }
+	}
+	
+	public function del()
+	{
+		$id = input('id');
+		$info = model('cart')->where(['id'=>$id])->delete();
+		if($info)
+		{
+			$this->success('','index/cart/lst');
+		}
+	}
 }
 
 
